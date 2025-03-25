@@ -1,65 +1,49 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
-import React from "react";
+import { Box, Grid, Text } from '@chakra-ui/react'
+import Wrapper from '../../../components/Wrapper'
+import React from 'react'
+import { CustomText } from '../../../components/CustomText'
+import { card } from '../../../data/landing-page.data'
 
 const Service = () => {
   return (
-    <Flex
-      bg={"#eee"}
-      p={["20px 30px", "20px 30px", "20px 30px", "50px 150px"]}
-      h={"fit-content"}
-      gap={5}
-      
-    >
-      <Box bg={"#fff"} borderRadius={"10px"} p={"20px"} flex={1}>
-        <Text
-          fontSize="25px"
-          textAlign={"center"}
-          fontWeight={"bold"}
-          py={"10px"}
+    <Box bg={'#FFF'} py={{ base: '45px' }}>
+      <Wrapper>
+        <Grid
+          templateColumns={{ base: '1fr', md: '1fr', lg: '1fr 1fr 1fr' }}
+          h={'fit-content'}
+          gap={5}
         >
-          Solution Providers
-        </Text>
-        <Text fontSize={"20px"}>
-          If your sell or install EV Chargers, operate a charging network or
-          manage a large fleet, learn about our{" "}
-          <span style={{ color: "blue" }}>enterprise software</span>
-          and <span style={{ color: "blue" }}>white-label solutions</span>.
-        </Text>
-      </Box>
-      <Box bg={"#fff"} borderRadius={"10px"} p={"20px"} flex={1}>
-        <Text
-          fontSize="25px"
-          py={"10px"}
-          textAlign={"center"}
-          fontWeight={"bold"}
-        >
-          Site Managers
-        </Text>
-        <Text fontSize={"20px"}>
-          If your sell or install EV Chargers, operate a charging network or
-          manage a large fleet, learn about our{" "}
-          <span style={{ color: "blue" }}>enterprise software</span>
-          and <span style={{ color: "blue" }}>white-label solutions</span>.
-        </Text>
-      </Box>
-      <Box bg={"#fff"} borderRadius={"10px"} p={"20px"} flex={1}>
-        <Text
-          fontSize="25px"
-          py={"10px"}
-          textAlign={"center"}
-          fontWeight={"bold"}
-        >
-          EV Drivers
-        </Text>
-        <Text fontSize={"20px"}>
-          If your sell or install EV Chargers, operate a charging network or
-          manage a large fleet, learn about our{" "}
-          <span style={{ color: "blue" }}>enterprise software</span>
-          and <span style={{ color: "blue" }}>white-label solutions</span>.
-        </Text>
-      </Box>
-    </Flex>
-  );
-};
+          {card.map(({ title, content }) => {
+            return (
+              <Box
+                bg={{ base: 'none', md: '#eee' }}
+                borderRadius={{ base: '0px', md: '10px' }}
+                p={{ base: '0px', md: '20px' }}
+                flex={1}
+                textAlign={{ base: 'left' }}
+              >
+                <Text fontSize="25px" fontWeight={'bold'} py={'10px'}>
+                  {title}
+                </Text>
+                <CustomText>
+                  {content.map((item, index) => {
+                    if (item.text && item.style) {
+                      return (
+                        <Text as="span" key={index} style={item.style}>
+                          {item.text}
+                        </Text>
+                      )
+                    }
+                    return <span key={index}>{item}</span>
+                  })}
+                </CustomText>
+              </Box>
+            )
+          })}
+        </Grid>
+      </Wrapper>
+    </Box>
+  )
+}
 
-export default Service;
+export default Service

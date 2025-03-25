@@ -12,14 +12,14 @@ import Action from './components/Action'
 const Index = () => {
   return (
     <Box>
-        <Hero />
-        <Sponsor />
-        <Service />
-        <Reseller />
-        <WhyCharge />
-        <Platform />
-        <Testimony />
-        <Action />
+      <Hero />
+      {/* <Sponsor /> */}
+      <Service />
+      <Reseller />
+      <WhyCharge />
+      <Platform />
+      <Testimony />
+      {/* <Action /> */}
     </Box>
   )
 }

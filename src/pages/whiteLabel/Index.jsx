@@ -8,10 +8,10 @@ import GetStarted from './components/GetStarted'
 const Index = () => {
   return (
     <Box>
-        <Hero />
-        <UseCase />
-        <Branded />
-        <GetStarted />
+      <Hero />
+      <UseCase />
+      <Branded />
+      <GetStarted />
     </Box>
   )
 }

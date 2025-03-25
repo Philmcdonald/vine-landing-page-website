@@ -1,77 +1,87 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
-import React from "react";
-import graphic2 from "../../../assets/graphic2.svg";
-import desktop from "../../../assets/desktop.svg"
-import motor from "../../../assets/motor.svg"
-import yatch from "../../../assets/yatch.svg"
-import tablet from "../../../assets/tablet.svg"
+import { Box, Flex, Image, Text, Grid } from '@chakra-ui/react'
+import React from 'react'
+import graphic2 from '../../../assets/graphic2.svg'
+import desktop from '../../../assets/desktop.svg'
+import motor from '../../../assets/motor.svg'
+import yatch from '../../../assets/yatch.svg'
+import tablet from '../../../assets/tablet.svg'
+
+import Wrapper from '../../../components/Wrapper'
+import SubHeading from '../../../components/SubHeading'
+import { CustomText } from '../../../components/CustomText'
+
+import { platform } from '../../../data/landing-page.data'
 
 const Platform = () => {
   return (
-    <Flex
-      p={["20px 30px", "20px 30px", "20px 30px", "20px 150px"]}
-      bg={"#2a4352"}
-      justifyContent={"center"}
-    >
-      <Box py={"50px"}>
-        <Text fontSize={"23px"} color={"green.300"}>
-          ChargeLab Platform
-        </Text>
-        <Flex align={"center"} gap={"50px"}>
-          <Box>
-            <Text
-              fontSize={"45px"}
-              maxW={"600px"}
-              fontWeight={"bold"}
-              color={"#fff"}
+    <Box bg={'#2a4352'}>
+      <Wrapper>
+        <Flex justifyContent={'center'}>
+          <Box pt={'50px'}>
+            <Grid
+              // mt={{ base: '', md: '10px' }}
+              templateColumns={{ base: '1fr', md: '55% 1fr' }}
+              gap={'50px'}
             >
-              A software-first approach to EV charging
-            </Text>
-            <Text maxW={"500px"} color={"#fff"} fontSize={"18px"} py="20px" fontWeight={500}>
-              Through software, we bring the industry's most flexible EV
-              infrastructure solutions. Manage any OCPP charger, charge any
-              electric car, and accept every major payment method.
-            </Text>
-          </Box>
+              <Box color={'white'}>
+                <Text fontSize={'23px'} color={'green.300'}>
+                  ChargeLab Platform
+                </Text>
 
-          <Box>
-            <Image src={graphic2} />
+                <SubHeading maxW={{ base: '', xl: '90%' }} color={'white'}>
+                  A software-first approach to EV charging
+                </SubHeading>
+
+                <CustomText mt={{ base: '20px' }}>
+                  Through software, we bring the industry's most flexible EV
+                  infrastructure solutions. Manage any OCPP charger, charge any
+                  electric car, and accept every major payment method.
+                </CustomText>
+              </Box>
+
+              <Box display={{ base: 'none', lg: 'block' }}>
+                <Image src={graphic2} />
+              </Box>
+            </Grid>
           </Box>
         </Flex>
+      </Wrapper>
 
-        <Flex mt="80px" gap={"30px"}>
-            <Box maxW={"300px"} color={"#fff"}>
-                <Image src={desktop}  h={"50px"} />
-                <Text py="10px" fontSize={"20px"} fontWeight={"bold"}>Full Stack Solution</Text>
-                <Text>
-                We help solutions providers, network operators, and fleets pick the right hardware and maintain large-scale EV charging operations.
-                </Text>
-            </Box>
-            <Box maxW={"300px"}  color={"#fff"}>
-                <Image src={motor} h={"50px"} />
-                <Text py="10px" fontSize={"20px"} fontWeight={"bold"} >Open & interoperable</Text>
-                <Text>
-                ChargeLab has verified 30+ OCPP chargers from over a dozen manufacturers. We're compatible with any OCPP hardware.
-                </Text>
-            </Box>
-            <Box maxW={"300px"}  color={"#fff"}>
-                <Image src={tablet}  h={"50px"} />
-                <Text  py="10px" fontSize={"20px"} fontWeight={"bold"}>Contant Upgrades</Text>
-                <Text>
-                We release improvements every year to help you stay ahead of the rapidly evolving EV industry. Cloud-based means zero downtime.
-                </Text>
-            </Box>
-            <Box maxW={"300px"}  color={"#fff"}>
-                <Image src={yatch}  h={"50px"}/>
-                <Text  py="10px" fontSize={"20px"} fontWeight={"bold"}>Future-proofed</Text>
-                <Text>
-                ChargeLab's cutting-edge microservices architecture makes our CSMS the most scalable solution on the market.
-                </Text>
-            </Box>
-        </Flex>
-      </Box>
-    </Flex>
-  );
-};
+      <Box
+        mt={{ base: '40px', md: '30px' }}
+        mb={{ base: '20px', md: '0px' }}
+        borderTop={{ base: '1px', md: 'none' }}
+        borderColor={'white'}
+      ></Box>
 
-export default Platform;
+      <Wrapper>
+        <Grid
+          gap={{ base: '45px', md: '30px' }}
+          templateColumns={{ base: '1fr', md: '1fr 1fr 1fr 1fr' }}
+        >
+          {platform.map(({ src, title, content }) => {
+            return (
+              <Box color={'#fff'}>
+                <Image
+                  src={src}
+                  h={{ base: '38px', md: '40px' }}
+                  mb={{ base: '10px', md: '' }}
+                />
+                <Text
+                  py="10px"
+                  fontSize={{ base: '16px', md: '15px' }}
+                  fontWeight={'bold'}
+                >
+                  {title}
+                </Text>
+                <Text fontSize={{ base: '14px', md: '14px' }}>{content}</Text>
+              </Box>
+            )
+          })}
+        </Grid>
+      </Wrapper>
+    </Box>
+  )
+}
+
+export default Platform

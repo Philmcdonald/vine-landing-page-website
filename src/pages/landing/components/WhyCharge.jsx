@@ -1,49 +1,67 @@
-import { Box, Flex, Text, Image } from "@chakra-ui/react";
-import React from "react";
-import chargeCard from "../../../assets/chargeCard.svg"
-import chargeMobile from "../../../assets/chargeMobile.webp"
-import chargeDashboard from "../../../assets/chargeDashboard.webp"
+import { Box, Flex, Text, Image, Grid } from '@chakra-ui/react'
+import React from 'react'
+import chargeMobile from '../../../assets/chargeMobile.webp'
+import chargeDashboard from '../../../assets/chargeDashboard.webp'
+import Wrapper from '../../../components/Wrapper'
+import { CustomText } from '../../../components/CustomText'
+import SubHeading from '../../../components/SubHeading'
 
 const WhyCharge = () => {
   return (
-    <Box p={["20px 30px", "20px 30px", "20px 30px", "20px 150px"]}>
-      <Box pt="50px">
-        <Text fontSize={"23px"} color={"blue.300"}>
-          Why ChargeLab
-        </Text>
-        <Text fontSize={"45px"} maxW={"600px"} fontWeight={"bold"}>
-          Your full-stack solution for smart EV charging
-        </Text>
-        <Flex justify={"space-between"} align={"center"} my="40px" gap={"50px"}>
-          <Box>
-            <Text fontSize={"18px"} fontWeight={500}>
-              We give fleets, charging networks, and EV charging solutions
-              providers all the tools they need to build smart EV infrastructure
-              businesses. ChargeLab is the best platform to connect and control
-              EV chargers at scale.
+    <Box>
+      <Wrapper>
+        <Box>
+          <Box pt="50px">
+            <Text fontSize={'23px'} color={'blue.300'}>
+              Why ChargeLab
             </Text>
-          </Box>
-          <Box>
-            <Text fontSize={"18px"} fontWeight={500}> 
-              We give fleets, charging networks, and EV charging solutions
-              providers all the tools they need to build smart EV infrastructure
-              businesses. ChargeLab is the best platform to connect and control
-              EV chargers at scale.
-            </Text>
-          </Box>
-        </Flex>
-        <Flex >
-            <Box>
-               <Box><Image src={chargeCard} /></Box> 
-                <Box mt="-70px"><Image src={chargeMobile} ml={"50px"} h={"700px"} /></Box>
-            </Box>
-            <Box>
-                <Image src={chargeDashboard} h={"700px"} w={"full"}/>
-            </Box>
-        </Flex>
-      </Box>
-    </Box>
-  );
-};
+            <SubHeading maxW={{ base: '', xl: '50%' }}>
+              Your full-stack solution for smart EV charging
+            </SubHeading>
 
-export default WhyCharge;
+            <Grid
+              templateColumns={{ base: '1fr', md: '1fr 1fr' }}
+              justify={'space-between'}
+              align={'center'}
+              mt={{ base: '20px' }}
+              gap={{ base: '30px', md: '50px' }}
+            >
+              <CustomText
+                fontSize={{ base: '18px' }}
+                textAlign={{ base: 'left' }}
+              >
+                We give fleets, charging networks, and EV charging solutions
+                providers all the tools they need to build smart EV
+                infrastructure businesses. ChargeLab is the best platform to
+                connect and control EV chargers at scale.
+              </CustomText>
+
+              <CustomText
+                fontSize={{ base: '18px' }}
+                textAlign={{ base: 'left' }}
+              >
+                We're also fanatical about user experience for EV drivers.
+                Plugging in should be fun and easy.
+              </CustomText>
+            </Grid>
+          </Box>
+        </Box>
+      </Wrapper>
+      <Flex
+        mx="auto"
+        width={{ base: '85%' }}
+        flexDir={{ base: 'column', md: 'row' }}
+      >
+        <Box>
+          <Image src={chargeMobile} />
+        </Box>
+
+        <Box>
+          <Image src={chargeDashboard} />
+        </Box>
+      </Flex>
+    </Box>
+  )
+}
+
+export default WhyCharge

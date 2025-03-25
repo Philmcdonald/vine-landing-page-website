@@ -1,22 +1,63 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react'
+import Wrapper from '../../../components/Wrapper'
 import React from 'react'
 import { CustomButton } from '../../../components/CustomButton'
-import graphics2 from "../../../assets/graphic2.svg"
+import graphics2 from '../../../assets/graphic2.svg'
 
 const Reseller = () => {
   return (
-     <Flex bg={"blue.300"}  p={["20px 30px", "20px 30px", "20px 30px", "100px 150px"]} justify={"center"}  h={"fit-content"} gap={5}>
-        <Box borderRadius={"20px"} p={"20px"}bg={"blue.100"} maxW={"600px"}>
-            <Text fontSize={"23px"} color={"blue.300"} py="10px" fontWeight={"semi-bold"}>Limited Time Offer</Text>
-            <Text fontSize={"30px"} color={"#000"} py="10px" fontWeight={"bold"}>Earn $1,000 in bonuses when you become a ChargeLab reseller. </Text>
-            <Text fontSize={"17px"} fontWeight={"medium"} pb={"40px"}>We cut you a check for $500 when you deploy your first two ports. Refer your friends to this program, and get $500 more for each one that deploys two or more ports.</Text>
-            <CustomButton btnText={"Become a reseller"} borderRadius={"50px"} bg={"blue.300"} color={"#fff"}/>
-        </Box>
-        <Box >
+    <Box bg={'black'}>
+      <Wrapper>
+        <Flex
+          py={{
+            base: '70px',
+            xl: '100px',
+          }}
+          justify={'center'}
+          h={'fit-content'}
+          gap={5}
+        >
+          <Box
+            borderRadius={'20px'}
+            p={'20px'}
+            py={{ base: '50px' }}
+            bg={'white'}
+            maxW={'600px'}
+          >
+            <Text
+              fontSize={{ base: '20px', md: '23px' }}
+              color={'black'}
+              pb="10px"
+              fontWeight={'semi-bold'}
+            >
+              Limited Time Offer
+            </Text>
+            <Text
+              fontSize={'30px'}
+              color={'#000'}
+              fontWeight={'bold'}
+              lineHeight={{ base: '3rem' }}
+            >
+              Earn $1,000 in bonuses when you become a ChargeLab reseller.{' '}
+            </Text>
+            <Text fontSize={'17px'} fontWeight={'medium'} py={{ base: '20px' }}>
+              We cut you a check for $500 when you deploy your first two ports.
+              Refer your friends to this program, and get $500 more for each one
+              that deploys two or more ports.
+            </Text>
+            <CustomButton
+              btnText={'Become a reseller'}
+              borderRadius={'50px'}
+              bg={'black'}
+              color={'#fff'}
+            />
+          </Box>
+          <Box display={{ base: 'none', lg: 'block' }}>
             <Image src={graphics2} />
-        </Box>
-
-     </Flex>
+          </Box>
+        </Flex>
+      </Wrapper>
+    </Box>
   )
 }
 
