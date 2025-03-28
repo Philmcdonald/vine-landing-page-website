@@ -1,5 +1,9 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Grid, Image, Text } from "@chakra-ui/react";
 import React from "react";
+import car from "../../../assets/car.svg"
+import software from "../../../assets/software.svg"
+import installer from "../../../assets/installer.svg"
+import building from "../../../assets/building.svg"
 
 const Mission = () => {
   return (
@@ -44,6 +48,41 @@ const Mission = () => {
           new era of transportation and energy.
         </Text>
       </Box>
+      <Grid templateColumns="repeat(4, 1fr)" gap={10} my="50px">
+              <Box maxW={"300px"} color={"#000"}>
+                <Image src={car} h={"50px"} />
+                <Text py="10px" fontSize={"18px"} fontWeight={"bold"}>
+                EV drivers
+                </Text>
+                <Text>
+                ChargeLab makes EV charging simple. We've got your back at home, at work, and on the go.
+                </Text>
+              </Box>
+              <Box maxW={"300px"} color={"#000"}>
+                <Image src={building} h={"50px"} />
+                <Text py="10px" fontSize={"18px"} fontWeight={"bold"}>
+                Building managers
+                </Text>
+                <Text>
+                Smart EV chargers for every building. The most advanced and affordable solutions.
+                </Text>
+              </Box>
+              <Box maxW={"300px"} color={"#000"}>
+                <Image src={installer} h={"50px"} />
+                <Text py="10px" fontSize={"18px"} fontWeight={"bold"}>
+                Installers & partners
+                </Text>
+                <Text>Partner with ChargeLab for more flexible EV charging solutions and custom installer tools.</Text>
+              </Box>
+              <Box maxW={"300px"} color={"#000"}>
+                <Image src={software} h={"50px"} />
+                <Text py="10px" fontSize={"18px"} fontWeight={"bold"}>
+                Software developers
+                </Text>
+                <Text>The world's first programmable EV charging platform. Add EV to your smart grid app today.</Text>
+                {/* <CustomButton btnText={"Learn more"} color={"blue.300"} bg={"none"} px={"0px"}/> */}
+              </Box>
+      </Grid>
     </Box>
   );
 };
