@@ -10,7 +10,7 @@ const Reseller = () => {
             <Text fontSize={"23px"} color={"blue.300"} py="10px" fontWeight={"semi-bold"}>Limited Time Offer</Text>
             <Text fontSize={"30px"} color={"#000"} py="10px" fontWeight={"bold"}>Earn $1,000 in bonuses when you become a ChargeLab reseller. </Text>
             <Text fontSize={"17px"} fontWeight={"medium"} pb={"40px"}>We cut you a check for $500 when you deploy your first two ports. Refer your friends to this program, and get $500 more for each one that deploys two or more ports.</Text>
-            <CustomButton btnText={"Become a reseller"} borderRadius={"50px"} bg={"blue.300"} color={"#fff"}/>
+            {/* <CustomButton btnText={"Become a reseller"} borderRadius={"50px"} bg={"blue.300"} color={"#fff"}/> */}
         </Box>
         <Box >
             <Image src={graphics2} />

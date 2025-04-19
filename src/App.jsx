@@ -16,6 +16,10 @@ import Public from "./pages/public/Index"
 import WorkPlace from "./pages/workplace/Index"
 import Footer from './components/Footer'
 import About from "./pages/about/Index"
+import Blog from "./pages/blog/Index"
+import Privacy from "./pages/privacy/Index"
+import Contact from "./pages/contact/Index"
+import Reseller from './pages/reseller/Index'
 
 function App() {
 
@@ -34,6 +38,11 @@ function App() {
       <Route path='public' element={<Public/>}/>
       <Route path='workspace' element={<WorkPlace />} />
       <Route path='about' element={<About />} />
+      <Route path="blog" element ={<Blog />} />
+      <Route path='privacy' element = {<Privacy />} />
+      <Route path='contact' element = {<Contact />} />
+      <Route path='reseller' element = {<Reseller />} />
+      
 
       {/* <Route path='turnkey' element={<TurnKey />} /> */}
     </Routes>

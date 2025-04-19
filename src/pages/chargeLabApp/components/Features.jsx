@@ -19,12 +19,12 @@ const Features = () => {
       justifyContent={"center"}
       h={"fit-content"}
     >
-      <Box maxW={"700px"} mt="30px">
+      <Box maxW={"1000px"} mt="30px">
         <Text color={"blue.300"} fontWeight={"bold"} fontSize={"25px"}>
           Features
         </Text>
         <Text fontSize={"50px"} fontWeight={"bold"} py="20px">
-          Love your EV charging experience
+          Enjoy Hassle-Free EV Charging Experience- <span style={{}}>VineVolt app is built by EV drivers, for EV drivers. </span>
         </Text>
         <Text fontSize={"18px"} fontWeight={"medium"}>
           ChargeLab's app is built by EV drivers, for EV drivers.

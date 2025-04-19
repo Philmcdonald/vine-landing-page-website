@@ -13,9 +13,9 @@ const Index = () => {
   return (
     <Box>
         <Hero />
-        <Sponsor />
+        {/* <Sponsor /> */}
         <Service />
-        <Reseller />
+        {/* <Reseller /> */}
         <WhyCharge />
         <Platform />
         <Testimony />

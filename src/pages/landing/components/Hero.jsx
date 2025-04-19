@@ -14,8 +14,7 @@ const Hero = () => {
       bgGradient="linear(to-r, teal.500, green.500)"
       h={"fit-content"}
       clipPath="polygon(0 0, 100% 0, 100% 80%, 0 100%)"
-    //   font-family=" Inter, sans-serif"
-   
+      //   font-family=" Inter, sans-serif"
     >
       <Navigation
         logo={logoW}
@@ -27,13 +26,14 @@ const Hero = () => {
       />
       <Flex my="50px" align={"center"} gap={"30px"}>
         <Box color={"#fff"} flex={1}>
-          <Text fontSize={"60px"} fontWeight={"bold"} >
-            Software for EV charging businesses
+          <Text fontSize={"60px"} fontWeight={"bold"}>
+            Comprehensive Software for EV Charging Businesses
           </Text>
           <Text pt={"20px"} pb={"30px"} fontSize={"20px"}>
-            ChargeLab is the operating system for EV charges. We're the backend
-            software powering North America's leading EV charger manufacturers,
-            turnkey installers, and network operators.
+            Vine Mobility's software forms the technological foundation that
+            connects hardware to users, enabling seamless EV charging
+            experiences, while giving operators complete control over their
+            charging ecosystems.
           </Text>
           <CustomButton
             px={"30px"}

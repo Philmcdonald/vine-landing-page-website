@@ -17,10 +17,10 @@ const Hero = () => {
     >
       <Navigation logo={logoB}/>
       < Flex mt="100px" >
-       <Box maxW={"500px"} flex={1}>
-        <Text fontSize={"60px"} fontWeight={"bold"}>Download the ChargeLab app</Text>
-        <Text fontSize={"18px"} fontWeight={"medium"} py="20px" maxW={"300px"}>
-        Click a button below to get the ChargeLab app for iOS or Android.
+       <Box maxW={"700px"} flex={1}>
+        <Text fontSize={"60px"} fontWeight={"bold"}>Download the VineVolt Driver's App</Text>
+        <Text fontSize={"18px"} fontWeight={"medium"} py="20px" maxW={"400px"}>
+        Click a button below to get the VineVolt Driver's app for iOS or Android.
         </Text>
         <Flex mt="20px" align={"center"} gap={"30px"}>
             <CustomButton  btnText={"App Store"} bg={"none"} border={"1px solid #000"} borderRadius={"10px"}/>

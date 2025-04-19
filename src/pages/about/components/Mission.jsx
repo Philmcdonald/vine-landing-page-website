@@ -1,9 +1,11 @@
-import { Box, Grid, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react";
 import React from "react";
-import car from "../../../assets/car.svg"
-import software from "../../../assets/software.svg"
-import installer from "../../../assets/installer.svg"
-import building from "../../../assets/building.svg"
+import car from "../../../assets/car.svg";
+import software from "../../../assets/software.svg";
+import installer from "../../../assets/installer.svg";
+import building from "../../../assets/building.svg";
+import { CustomButton } from "../../../components/CustomButton";
+import FormInput from "../../../components/FormInput";
 
 const Mission = () => {
   return (
@@ -40,7 +42,7 @@ const Mission = () => {
           carbon impact. And we can enable bi-directional communication between
           individual EVs and the grid.
         </Text>
-        <Text fontSize={"18px"}  maxW={"900px"}>
+        <Text fontSize={"18px"} maxW={"900px"}>
           ChargeLab is building for scale because our planet needs millions more
           EVs, and consumers want millions more EVs. Automobiles have been
           powered by petrol since 1892. The switch to electric vehicles is a
@@ -49,40 +51,111 @@ const Mission = () => {
         </Text>
       </Box>
       <Grid templateColumns="repeat(4, 1fr)" gap={10} my="50px">
-              <Box maxW={"300px"} color={"#000"}>
-                <Image src={car} h={"50px"} />
-                <Text py="10px" fontSize={"18px"} fontWeight={"bold"}>
-                EV drivers
-                </Text>
-                <Text>
-                ChargeLab makes EV charging simple. We've got your back at home, at work, and on the go.
-                </Text>
-              </Box>
-              <Box maxW={"300px"} color={"#000"}>
-                <Image src={building} h={"50px"} />
-                <Text py="10px" fontSize={"18px"} fontWeight={"bold"}>
-                Building managers
-                </Text>
-                <Text>
-                Smart EV chargers for every building. The most advanced and affordable solutions.
-                </Text>
-              </Box>
-              <Box maxW={"300px"} color={"#000"}>
-                <Image src={installer} h={"50px"} />
-                <Text py="10px" fontSize={"18px"} fontWeight={"bold"}>
-                Installers & partners
-                </Text>
-                <Text>Partner with ChargeLab for more flexible EV charging solutions and custom installer tools.</Text>
-              </Box>
-              <Box maxW={"300px"} color={"#000"}>
-                <Image src={software} h={"50px"} />
-                <Text py="10px" fontSize={"18px"} fontWeight={"bold"}>
-                Software developers
-                </Text>
-                <Text>The world's first programmable EV charging platform. Add EV to your smart grid app today.</Text>
-                {/* <CustomButton btnText={"Learn more"} color={"blue.300"} bg={"none"} px={"0px"}/> */}
-              </Box>
+        <Box maxW={"300px"} color={"#000"}>
+          <Image src={car} h={"50px"} />
+          <Text py="10px" fontSize={"18px"} fontWeight={"bold"}>
+            EV drivers
+          </Text>
+          <Text>
+            ChargeLab makes EV charging simple. We've got your back at home, at
+            work, and on the go.
+          </Text>
+          <CustomButton
+            btnText={"Download our app"}
+            px={"0px"}
+            bg={"none"}
+            color={"teal"}
+          />
+        </Box>
+
+        <Box maxW={"300px"} color={"#000"}>
+          <Image src={building} h={"50px"} />
+          <Text py="10px" fontSize={"18px"} fontWeight={"bold"}>
+            Building managers
+          </Text>
+          <Text>
+            Smart EV chargers for every building. The most advanced and
+            affordable solutions.
+          </Text>
+          <CustomButton
+            btnText={"Learn more"}
+            px={"0px"}
+            bg={"none"}
+            color={"teal"}
+          />
+        </Box>
+        <Box maxW={"300px"} color={"#000"}>
+          <Image src={installer} h={"50px"} />
+          <Text py="10px" fontSize={"18px"} fontWeight={"bold"}>
+            Installers & partners
+          </Text>
+          <Text>
+            Partner with ChargeLab for more flexible EV charging solutions and
+            custom installer tools.
+          </Text>
+          <CustomButton
+            btnText={"Become a partner"}
+            px={"0px"}
+            bg={"none"}
+            color={"teal"}
+          />
+        </Box>
+        <Box maxW={"300px"} color={"#000"}>
+          <Image src={software} h={"50px"} />
+          <Text py="10px" fontSize={"18px"} fontWeight={"bold"}>
+            Software developers
+          </Text>
+          <Text>
+            The world's first programmable EV charging platform. Add EV to your
+            smart grid app today.
+          </Text>
+          <CustomButton
+            btnText={"Start building"}
+            px={"0px"}
+            bg={"none"}
+            color={"teal"}
+          />
+          {/* <CustomButton btnText={"Learn more"} color={"blue.300"} bg={"none"} px={"0px"}/> */}
+        </Box>
       </Grid>
+      <Flex mt="100px" gap={"50px"}>
+        <Box bg={"#fff"} p={"30px"} borderRadius={"10px"} boxShadow={"xl"} flex={1} zIndex={1}>
+          <Flex align={"center"} gap={"10px"}>
+            <FormInput label={"FIRST NAME"} />
+            <FormInput label={"LAST NAME"} />
+          </Flex>
+          <Flex my={"20px"}>
+            <FormInput label={"BUSINESS EMAIL "} />
+          </Flex>
+          <Flex align={"center"} gap={"10px"}>
+            <FormInput label={"PHONE NUMBER"} />
+            <FormInput label={"COMPANY NAME"} />
+          </Flex>
+          <Flex my={"20px"}>
+            <FormInput label={"HOW CAN WE HELP YOU?"} lines={5} />
+          </Flex>
+          <Flex my={"30px"}>
+            <CustomButton
+              btnText={"submit"}
+              color={"#fff"}
+              bg={"blue.300"}
+              w={"full"}
+            />
+          </Flex>
+        </Box>
+        <Box flex={1}>
+          <Text fontWeight={"bold"} fontSize={"45px"}>
+            Contact our team
+          </Text>
+          <Text my="20px" fontWeight={"medium"} fontSize={"20px"}>
+            Fill out the form for media enquiries, partnership opportunities, or
+            if you are looking for a white-label solution.
+          </Text>
+          <Text fontSize={"20px"} fontWeight={"medium"}>
+          If you are an EV driver, use our <span style={{color:"teal", cursor:"pointer",}} >feedback form.</span> 
+          </Text>
+        </Box>
+      </Flex>
     </Box>
   );
 };

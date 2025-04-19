@@ -94,7 +94,7 @@ function NavigationOptions({ title, color,iconColor }) {
                     </Link> */}
                     <Text fontSize={"12px"} fontWeight={"bold"} color={"#ccc"}>FOR EV DRIVERS</Text>
                     <Link to={"/charge-lab-app"}>
-                    <Text  _hover={{color:"blue"}} transition="all 0.3s ease">ChargeLab app</Text>
+                    <Text  _hover={{color:"blue"}} transition="all 0.3s ease">Driver's VineVolt app</Text>
                     </Link>
                     <Text fontSize={"12px"} fontWeight={"bold"} color={"#ccc"}>FOR PARTNERS</Text>
                     <Link to={"/integration"}>
@@ -150,16 +150,13 @@ function NavigationOptions({ title, color,iconColor }) {
                   <Link to={"/about"}>
                     <Text _hover={{color:"blue"}} transition="all 0.3s ease">About </Text>
                   </Link>
-                  <Link to={"/workspace"}>
+                  <Link to={"/contact"}>
                   <Text  _hover={{color:"blue"}} transition="all 0.3s ease">Contact</Text>
                   </Link>
-                  <Link to={"/workspace"}>
+                  <Link to={"/blog"}>
                   <Text  _hover={{color:"blue"}} transition="all 0.3s ease">Blog</Text>
                   </Link>
-                  <Link to={"/workspace"}>
-                  <Text  _hover={{color:"blue"}} transition="all 0.3s ease">Security trust center</Text>
-                  </Link>
-                  <Link to={"/workspace"}>
+                  <Link to={"/privacy"}>
                   <Text  _hover={{color:"blue"}} transition="all 0.3s ease">Privacy & terms</Text>
                   </Link>
               </Flex>
@@ -177,11 +174,11 @@ function NavigationOptions({ title, color,iconColor }) {
             // borderRadius={"5px"}
           >
             <Flex  color={"#000"} flexDir={"column"} gap={"20px"}>
-                  <Link to={"/public"}>
-                    <Text _hover={{color:"blue"}} transition="all 0.3s ease">Public </Text>
+                  <Link to={"/reseller"}>
+                    <Text _hover={{color:"blue"}} transition="all 0.3s ease">Become a Reseller </Text>
                   </Link>
-                  <Link to={"/workspace"}>
-                  <Text  _hover={{color:"blue"}} transition="all 0.3s ease">Workspace</Text>
+                  <Link to={"/contact"}>
+                  <Text  _hover={{color:"blue"}} transition="all 0.3s ease">Contact us</Text>
                   </Link>
               </Flex>
           </Box>

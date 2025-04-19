@@ -15,7 +15,7 @@ const Platform = () => {
     >
       <Box py={"50px"}>
         <Text fontSize={"23px"} color={"green.300"}>
-          ChargeLab Platform
+          Enterprise Software - VneCharge
         </Text>
         <Flex align={"center"} gap={"50px"}>
           <Box>
@@ -25,7 +25,7 @@ const Platform = () => {
               fontWeight={"bold"}
               color={"#fff"}
             >
-              A software-first approach to EV charging
+              A Smart Solution to EV Charging
             </Text>
             <Text maxW={"500px"} color={"#fff"} fontSize={"18px"} py="20px" fontWeight={500}>
               Through software, we bring the industry's most flexible EV

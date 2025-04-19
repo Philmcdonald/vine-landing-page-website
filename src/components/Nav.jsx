@@ -44,7 +44,7 @@ const  Navigation =({bg, color, iconColor,loginColor, loginTextColor, logo})=> {
           <NavigationOptions title="RESOURCES" color={color} iconColor={iconColor} />
           <NavigationOptions title="CONNECT" color={color} iconColor={iconColor} />
 
-          <Link to={"/pricing"}>
+          <Link to={"/blog"}>
             <Text color={color} fontSize={"13px"} fontWeight={"bold"}>BLOG</Text>
           </Link>
           <Link to={"/pricing"}>

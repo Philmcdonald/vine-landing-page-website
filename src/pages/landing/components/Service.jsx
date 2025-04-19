@@ -3,14 +3,18 @@ import React from "react";
 
 const Service = () => {
   return (
-    <Flex
+    <Box
       bg={"#eee"}
-      p={["20px 30px", "20px 30px", "20px 30px", "50px 150px"]}
+      p={["20px 30px", "20px 30px", "20px 30px", "200px 20px 150px"]}
+      mt="-150px"
       h={"fit-content"}
-      gap={5}
+      gap={"50px"}
+      
       
     >
-      <Box bg={"#fff"} borderRadius={"10px"} p={"20px"} flex={1}>
+      <Flex align={"center"} justifyContent={"center"} >
+     
+      <Box bg={"#fff"} borderRadius={"10px"} p={"20px"} maxW={"500px"} margin={"0px auto"}>
         <Text
           fontSize="25px"
           textAlign={"center"}
@@ -23,26 +27,11 @@ const Service = () => {
           If your sell or install EV Chargers, operate a charging network or
           manage a large fleet, learn about our{" "}
           <span style={{ color: "blue" }}>enterprise software</span>
-          and <span style={{ color: "blue" }}>white-label solutions</span>.
+          .
         </Text>
       </Box>
-      <Box bg={"#fff"} borderRadius={"10px"} p={"20px"} flex={1}>
-        <Text
-          fontSize="25px"
-          py={"10px"}
-          textAlign={"center"}
-          fontWeight={"bold"}
-        >
-          Site Managers
-        </Text>
-        <Text fontSize={"20px"}>
-          If your sell or install EV Chargers, operate a charging network or
-          manage a large fleet, learn about our{" "}
-          <span style={{ color: "blue" }}>enterprise software</span>
-          and <span style={{ color: "blue" }}>white-label solutions</span>.
-        </Text>
-      </Box>
-      <Box bg={"#fff"} borderRadius={"10px"} p={"20px"} flex={1}>
+    
+      <Box bg={"#fff"} borderRadius={"10px"} p={"20px"}  maxW={"500px"} margin={"0px auto"}>
         <Text
           fontSize="25px"
           py={"10px"}
@@ -58,7 +47,8 @@ const Service = () => {
           and <span style={{ color: "blue" }}>white-label solutions</span>.
         </Text>
       </Box>
-    </Flex>
+       </Flex>
+    </Box>
   );
 };
 

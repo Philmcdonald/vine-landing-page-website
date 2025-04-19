@@ -16,8 +16,8 @@ const EnterpriseSofware = () => {
       <HowItWorks />
       <Features  />
       <UserInterface />
-      <Integration />
-      <Developers />
+      {/* <Integration /> */}
+      {/* <Developers /> */}
       <GetStarted />
     </Box>
   );

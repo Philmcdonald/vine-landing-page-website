@@ -18,11 +18,10 @@ const Action = () => {
           Get in on the action
         </Text>
         <Text fontSize={"20px"} fontWeight={"medium"} py="20px">
-          By 2040, the EV charging market is projected to exceed $100B* in the
-          US alone. What are you waiting for?
+          By 2040, the EV charging market is projected to exceed $500M by 2030 in Africa alone. What are you waiting for?
         </Text>
         <Flex justify={"center"} mt="20px">
-          <CustomButton btnText={"Become a reseller"} bg={"blue.300"} color={"#fff"} fontSize={"20px"} borderRadius={"50px"}/>
+          <CustomButton btnText={"Let's Talk"} bg={"blue.300"} color={"#fff"} fontSize={"20px"} borderRadius={"50px"}/>
 
         </Flex>
         <Flex justify={"center"} mt="30px">

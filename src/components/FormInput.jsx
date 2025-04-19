@@ -17,7 +17,7 @@ function FormInput({
 }) {
   return (
     <FormControl mt={mt} mb={mb}>
-      <FormLabel fontSize={"0.7em"} color={labelColor}>
+      <FormLabel fontSize={"1.0em"} color={labelColor} fontWeight={"medium"}>
         {label}
       </FormLabel>
       {!lines ? (
