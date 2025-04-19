@@ -1,6 +1,6 @@
 import { Text } from '@chakra-ui/react'
 
-export const CustomText = ({ children, ...props }) => {
+const CustomText = ({ children, ...props }) => {
   return (
     <Text
       fontWeight={{ base: 'normal' }}
@@ -12,3 +12,5 @@ export const CustomText = ({ children, ...props }) => {
     </Text>
   )
 }
+
+export default CustomText

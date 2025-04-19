@@ -19,7 +19,12 @@ const Hero = () => {
       }}
       overflow={'hidden'}
     >
-      <Wrapper>
+      <Wrapper
+        py={{
+          base: '10px',
+          xl: '30px',
+        }}
+      >
         <Navigation
           logo={logoW}
           bg="none"

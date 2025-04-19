@@ -1,13 +1,18 @@
 import { Box, Grid, Text } from '@chakra-ui/react'
 import Wrapper from '../../../components/Wrapper'
 import React from 'react'
-import { CustomText } from '../../../components/CustomText'
+import CustomText from '../../../components/CustomText'
 import { card } from '../../../data/landing-page.data'
 
 const Service = () => {
   return (
-    <Box bg={'#FFF'} py={{ base: '45px' }}>
-      <Wrapper>
+    <Box bg={'#FFF'}>
+      <Wrapper
+        py={{
+          base: '45px',
+          xl: '100px',
+        }}
+      >
         <Grid
           templateColumns={{ base: '1fr', md: '1fr', lg: '1fr 1fr 1fr' }}
           h={'fit-content'}

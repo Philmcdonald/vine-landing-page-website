@@ -3,18 +3,17 @@ import React from 'react'
 import chargeMobile from '../../../assets/chargeMobile.webp'
 import chargeDashboard from '../../../assets/chargeDashboard.webp'
 import Wrapper from '../../../components/Wrapper'
-import { CustomText } from '../../../components/CustomText'
+import CustomText from '../../../components/CustomText'
 import SubHeading from '../../../components/SubHeading'
+import InfoHeading from '../../../components/InfoHeading'
 
 const WhyCharge = () => {
   return (
     <Box>
-      <Wrapper>
+      <Wrapper pb={{ base: '20px', xl: '30px' }}>
         <Box>
-          <Box pt="50px">
-            <Text fontSize={'23px'} color={'blue.300'}>
-              Why ChargeLab
-            </Text>
+          <Box>
+            <InfoHeading>Why ChargeLab</InfoHeading>
             <SubHeading maxW={{ base: '', xl: '50%' }}>
               Your full-stack solution for smart EV charging
             </SubHeading>
@@ -51,6 +50,7 @@ const WhyCharge = () => {
         mx="auto"
         width={{ base: '85%' }}
         flexDir={{ base: 'column', md: 'row' }}
+        pb={{ base: '30px', xl: '50px' }}
       >
         <Box>
           <Image src={chargeMobile} />

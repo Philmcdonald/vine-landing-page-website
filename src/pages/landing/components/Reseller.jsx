@@ -3,20 +3,13 @@ import Wrapper from '../../../components/Wrapper'
 import React from 'react'
 import { CustomButton } from '../../../components/CustomButton'
 import graphics2 from '../../../assets/graphic2.svg'
+import InfoHeading from '../../../components/InfoHeading'
 
 const Reseller = () => {
   return (
     <Box bg={'black'}>
       <Wrapper>
-        <Flex
-          py={{
-            base: '70px',
-            xl: '100px',
-          }}
-          justify={'center'}
-          h={'fit-content'}
-          gap={5}
-        >
+        <Flex justify={'center'} h={'fit-content'} gap={5}>
           <Box
             borderRadius={'20px'}
             p={'20px'}
@@ -24,14 +17,9 @@ const Reseller = () => {
             bg={'white'}
             maxW={'600px'}
           >
-            <Text
-              fontSize={{ base: '20px', md: '23px' }}
-              color={'black'}
-              pb="10px"
-              fontWeight={'semi-bold'}
-            >
-              Limited Time Offer
-            </Text>
+            <InfoHeading color={'black'} pb="10px">
+              Limited Time Offer{' '}
+            </InfoHeading>
             <Text
               fontSize={'30px'}
               color={'#000'}

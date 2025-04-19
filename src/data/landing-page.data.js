@@ -65,9 +65,7 @@ export const testimony = [
   {
     name: 'Jack Bauwer',
     title: 'CEO of EV Charger',
-    content: `Obtaining CTEP certification [with ChargeLab] for our
-                DirectPowerPS 360 DC fast chargers is a significant achievement.
-                It's a testament to our commitment to delivering cutting-edge,
+    content: `Obtaining CTEP certification [with ChargeLab] for our DirectPowerPS 360 DC fast chargers is a significant achievement. It's a testament to our commitment to delivering cutting-edge,
                 compliant charging solutions.`,
   },
   {
