@@ -1,9 +1,10 @@
-import { Box, Flex, Grid, Image, Text } from '@chakra-ui/react'
-import { CustomText } from '../../../components/CustomText'
+import { Box, Flex, Grid, Image } from '@chakra-ui/react'
+import { Text } from '../../../components'
 import React from 'react'
 import Navigation from '../../../components/Nav'
 import { CustomButton } from '../../../components/CustomButton'
 import Wrapper from '../../../components/Wrapper'
+import MainHeading from '../../../components/MainHeader'
 import graphic1 from '../../../assets/graphic1.svg'
 import logoW from '../../../assets/logoW.png'
 
@@ -43,22 +44,16 @@ const Hero = () => {
             mt={{ base: '40px', lg: '60px', xl: '100px' }}
             w={{ base: '98%', md: '100%' }}
           >
-            <Text
-              fontSize={{ base: '30px', lg: '40px', xl: '58px' }}
-              lineHeight={{ base: '3rem', lg: '4rem', xl: '5.5rem' }}
-              fontWeight={{ base: '600', xl: '700' }}
-            >
-              Software for EV charging businesses
-            </Text>
+            <MainHeading>Software for EV charging businesses</MainHeading>
 
-            <CustomText
+            <Text
               my={{ base: '30px', lg: '20px', xl: '25px' }}
               mb={{ base: '35px' }}
             >
               ChargeLab is the operating system for EV chargers. We're the
               back-end software powering North America's leading EV charger
               manufacturers, turnkey installers, and network operators.
-            </CustomText>
+            </Text>
 
             <CustomButton
               px="20px"
