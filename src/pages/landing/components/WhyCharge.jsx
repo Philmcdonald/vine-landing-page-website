@@ -1,5 +1,4 @@
-import { Box, Flex, Text, Image, Grid } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Flex, Image, Grid } from '@chakra-ui/react'
 import chargeMobile from '../../../assets/chargeMobile.webp'
 import chargeDashboard from '../../../assets/chargeDashboard.webp'
 import Wrapper from '../../../components/Wrapper'
@@ -13,9 +12,9 @@ const WhyCharge = () => {
       <Wrapper pb={{ base: '20px', xl: '30px' }}>
         <Box>
           <Box>
-            <InfoHeading>Why ChargeLab</InfoHeading>
+            <InfoHeading>Why Vine Mobility ?</InfoHeading>
             <SubHeading maxW={{ base: '', xl: '50%' }}>
-              Your full-stack solution for smart EV charging
+              Your comprehensive solution for smart EV charging
             </SubHeading>
 
             <Grid
@@ -23,24 +22,40 @@ const WhyCharge = () => {
               justify={'space-between'}
               align={'center'}
               mt={{ base: '20px' }}
-              gap={{ base: '30px', md: '50px' }}
+              gap={{ base: '30px', md: '30px' }}
             >
               <CustomText
                 fontSize={{ base: '18px' }}
                 textAlign={{ base: 'left' }}
               >
-                We give fleets, charging networks, and EV charging solutions
-                providers all the tools they need to build smart EV
-                infrastructure businesses. ChargeLab is the best platform to
-                connect and control EV chargers at scale.
+                We deliver complete ecosystem of tools designed for fleet
+                managers, charging network operators, EV infrastructure
+                developers, Energy companies, oil and gas companies, malls,
+                recreational centers and so on. Our{' '}
+                <span style={{ fontWeight: 'bolder' }}>
+                  Enterprise Software{' '}
+                </span>
+                provides everything needed to deploy, manage, and scale
+                intelligent charging solutions.
               </CustomText>
 
               <CustomText
                 fontSize={{ base: '18px' }}
                 textAlign={{ base: 'left' }}
               >
-                We're also fanatical about user experience for EV drivers.
-                Plugging in should be fun and easy.
+                With our robust management system, you can seamlessly integrate
+                and control your entire charging network, regardless of size or
+                complexity. Vine Mobility offers the most reliable framework for
+                expanding your EV charging operations.
+              </CustomText>
+              <CustomText
+                fontSize={{ base: '18px' }}
+                textAlign={{ base: 'left' }}
+              >
+                We&apos;re equally passionate about creating exceptional
+                experiences for drivers through our Driver App. Our user-centric
+                design ensures that charging is not just efficient but also
+                intuitive and enjoyable for everyone.
               </CustomText>
             </Grid>
           </Box>

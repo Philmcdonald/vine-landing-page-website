@@ -1,28 +1,31 @@
-import { Box, Flex, Image, Text } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Flex, Grid, Image, Text } from '@chakra-ui/react'
 import charger1 from '../../../assets/charger1.webp'
 import charger2 from '../../../assets/charger2.webp'
 import charger3 from '../../../assets/charger3.webp'
 import charger4 from '../../../assets/charger4.webp'
 import Wrapper from '../../../components/Wrapper'
+import { CustomText, InfoHeading, SubHeading } from '../../../components'
 
 const Recommendation = () => {
   return (
     <Box bg={'#fff'} justifyContent={'center'} h={'fit-content'}>
       <Wrapper>
         <Box maxW={'600px'}>
-          <Text color="blue.300" fontWeight={'bold'} fontSize={'25px'}>
-            Recommended hardware
-          </Text>
-          <Text fontSize={'30px'} fontWeight={'bold'} py="20px">
+          <InfoHeading color="blue.300">Recommended hardware</InfoHeading>
+          <SubHeading fontSize={'30px'} fontWeight={'bold'} py="20px">
             The best EV chargers for workplaces
-          </Text>
-          <Text fontWeight={'medium'} fontSize={'20px'}>
-            ChargeLab's platform works with any OCPP-compliant EV charger. Here
-            are our top recommendations for workplace EV chargers.
-          </Text>
+          </SubHeading>
+          <CustomText>
+            VineCharge&apos;s platform works with any OCPP-compliant EV charger.
+            Here are our top recommendations for workplace EV chargers.
+          </CustomText>
         </Box>
-        <Flex justify={'center'} gap={'50px'} mt="50px">
+        <Grid
+          gridTemplateColumns={{ base: '1fr', xl: 'repeat(4,1fr)' }}
+          justify={'center'}
+          gap={'50px'}
+          mt="50px"
+        >
           <Box
             bg={'#fff'}
             borderRadius={'20px'}
@@ -111,7 +114,7 @@ const Recommendation = () => {
               <Text>60-220KW</Text>
             </Flex>
           </Box>
-        </Flex>
+        </Grid>
       </Wrapper>
     </Box>
   )

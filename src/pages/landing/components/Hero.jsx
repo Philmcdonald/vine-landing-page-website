@@ -1,6 +1,5 @@
 import { Box, Flex, Grid, Image } from '@chakra-ui/react'
 import { Text } from '../../../components'
-import React from 'react'
 import Navigation from '../../../components/Nav'
 import { CustomButton } from '../../../components/CustomButton'
 import Wrapper from '../../../components/Wrapper'
@@ -46,18 +45,21 @@ const Hero = () => {
             justifyContent={{ lg: 'center', xl: 'flex-start' }}
             color="#fff"
             flex={1}
-            mt={{ base: '40px', lg: '60px', xl: '100px' }}
+            mt={{ base: '40px', lg: '60px', xl: '50px' }}
             w={{ base: '98%', md: '100%' }}
           >
-            <MainHeading>Software for EV charging businesses</MainHeading>
+            <MainHeading>
+              Comprehensive Software for EV Charging Businesses
+            </MainHeading>
 
             <Text
               my={{ base: '30px', lg: '20px', xl: '25px' }}
               mb={{ base: '35px' }}
             >
-              ChargeLab is the operating system for EV chargers. We're the
-              back-end software powering North America's leading EV charger
-              manufacturers, turnkey installers, and network operators.
+              Vine Mobility&apos;s software forms the technological foundation
+              that connects hardware to users, enabling seamless EV charging
+              experiences, while giving operators complete control over their
+              charging ecosystems.
             </Text>
 
             <CustomButton

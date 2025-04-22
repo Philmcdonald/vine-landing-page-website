@@ -1,5 +1,4 @@
-import { Box, Flex, Image, Text } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Flex, Grid, Image, Text } from '@chakra-ui/react'
 import FormInput from '../../../components/FormInput'
 import { CustomButton } from '../../../components/CustomButton'
 import o1 from '../../../assets/o1.svg'
@@ -7,12 +6,17 @@ import o2 from '../../../assets/o2.svg'
 import o3 from '../../../assets/o3.svg'
 import o4 from '../../../assets/o4.svg'
 import Wrapper from '../../../components/Wrapper'
+import { CustomText, SubHeading } from '../../../components'
 
 const Form = () => {
   return (
     <Box bg={'#eee'} justifyContent={'center'} h={'fit-content'}>
       <Wrapper>
-        <Flex justify={'center'} gap={'100px'}>
+        <Grid
+          gridTemplateColumns={{ base: '1fr', xl: '1fr 1fr' }}
+          justify={'center'}
+          gap={{ base: '50px', xl: '100px' }}
+        >
           <Box
             bg={'#fff'}
             p={'30px'}
@@ -46,20 +50,19 @@ const Form = () => {
           </Box>
 
           <Box flex={1}>
-            <Text fontSize={'30px'} fontWeight={'bold'}>
-              Let's get started
-            </Text>
-            <Text
-              maxW={'400px'}
-              fontWeight={'medium'}
-              fontSize={'18px'}
-              py="10px"
-            >
-              Fill out the form to get in touch with one of ChargeLab's EV
+            <SubHeading fontSize={'30px'} fontWeight={'bold'}>
+              Let&apos;s get started
+            </SubHeading>
+            <CustomText maxW={'400px'} py="10px">
+              Fill out the form to get in touch with one of VineCharge&apos;s EV
               infrastructure experts. We power electric vehicle charging at
               hundreds of workplaces around the world.
-            </Text>
-            <Flex my="30px">
+            </CustomText>
+            <Grid
+              gridTemplateColumns={{ base: '1fr', xl: '1fr 1fr' }}
+              gap={{ base: '30px', xl: '50px' }}
+              my="30px"
+            >
               <Box>
                 <Image src={o1} h={'50px'} />
                 <Text fontWeight={'bold'} py="10px">
@@ -94,8 +97,7 @@ const Form = () => {
                   fontSize={'18px'}
                 />
               </Box>
-            </Flex>
-            <Flex>
+
               <Box>
                 <Image src={o3} h={'50px'} />
                 <Text fontWeight={'bold'} py="10px">
@@ -122,9 +124,9 @@ const Form = () => {
                   fontSize={'18px'}
                 />
               </Box>
-            </Flex>
+            </Grid>
           </Box>
-        </Flex>
+        </Grid>
       </Wrapper>
     </Box>
   )

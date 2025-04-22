@@ -1,40 +1,54 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
-import React from "react";
-import Navigation from "../../../components/Nav";
-import { CustomButton } from "../../../components/CustomButton";
-import { GrAppleAppStore } from "react-icons/gr";
-import appImg from "../../../assets/appImg.webp"
-import logoB from "../../../assets/logoB.png"
-import logoW from "../../../assets/logoW.png"
+import { Box, Flex, Image } from '@chakra-ui/react'
+import Navigation from '../../../components/Nav'
+import { CustomButton } from '../../../components/CustomButton'
+import appImg from '../../../assets/appImg.webp'
+import logoB from '../../../assets/logoB.png'
+import { Wrapper, MainHeading, CustomText } from '../../../components'
 
 const Hero = () => {
   return (
-    <Box
-      p={["20px 30px", "20px 30px", "20px 30px", "20px 150px"]}
-      bg={"#eee"}
-      justifyContent={"center"}
-      h={"100vh"}
-    >
-      <Navigation logo={logoB}/>
-      < Flex mt="100px" >
-       <Box maxW={"500px"} flex={1}>
-        <Text fontSize={"60px"} fontWeight={"bold"}>Download the ChargeLab app</Text>
-        <Text fontSize={"18px"} fontWeight={"medium"} py="20px" maxW={"300px"}>
-        Click a button below to get the ChargeLab app for iOS or Android.
-        </Text>
-        <Flex mt="20px" align={"center"} gap={"30px"}>
-            <CustomButton  btnText={"App Store"} bg={"none"} border={"1px solid #000"} borderRadius={"10px"}/>
-            <CustomButton  btnText={"Google Play Store"} bg={"none"} border={"1px solid #000"} borderRadius={"10px"}/>
-        </Flex>
-       </Box>
-      
-      <Box flex={1}>
-        <Image src={appImg} h={"800px"}/>
-      </Box>
-      
-      </Flex>
-    </Box>
-  );
-};
+    <Box bg={'#eee'}>
+      <Wrapper
+        py={{
+          base: '20px',
+          xl: '20px',
+        }}
+      >
+        <Navigation logo={logoB} />
+        <Flex
+          flexDirection={{ base: 'column', xl: 'row' }}
+          mt={{ base: '45px', xl: '70px' }}
+          mb={{ base: '30px' }}
+        >
+          <Box maxW={'700px'} flex={1}>
+            <MainHeading>Download the VineVolt Driver&apos;s App</MainHeading>
+            <CustomText py="20px" maxW={'400px'}>
+              Click a button below to get the VineVolt Driver&apos;s app for iOS
+              or Android.
+            </CustomText>
+            <Flex mt="20px" align={'center'} gap={'20px'}>
+              <CustomButton
+                btnText={'App Store'}
+                bg={'none'}
+                border={'1px solid #000'}
+                borderRadius={'10px'}
+              />
+              <CustomButton
+                btnText={'Google Play Store'}
+                bg={'none'}
+                border={'1px solid #000'}
+                borderRadius={'10px'}
+              />
+            </Flex>
+          </Box>
 
-export default Hero;
+          <Box mt={{ base: '30px', xl: '-20px' }} flex={1}>
+            <Image src={appImg} />
+          </Box>
+        </Flex>
+      </Wrapper>
+    </Box>
+  )
+}
+
+export default Hero

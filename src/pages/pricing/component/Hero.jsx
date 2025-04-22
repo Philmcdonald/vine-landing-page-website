@@ -1,30 +1,38 @@
-import { Box, Text } from "@chakra-ui/react";
-import React from "react";
-import Navigation from "../../../components/Nav";
-import logoB from "../../../assets/logoB.png"
-import logoW from "../../../assets/logoW.png"
+import { Box } from '@chakra-ui/react'
+import Navigation from '../../../components/Nav'
+import logoW from '../../../assets/logoW.png'
+import { CustomText, MainHeading, Wrapper } from '../../../components'
 
 const Hero = () => {
   return (
-    <Box
-      p={["20px 30px", "20px 30px", "20px 30px", "20px 150px"]}
-      bgGradient="linear(to-r, teal.500, green.500)"
-      h={"fit-content"}
-    >
-      <Navigation logo={logoW} color={"#fff"} loginColor={"#fff"} loginTextColor={"#fff"} />
+    <Box bgGradient="linear(to-r, teal.500, green.500)" h={'fit-content'}>
+      <Wrapper
+        py={{
+          base: '10px',
+          xl: '30px',
+        }}
+      >
+        <Navigation
+          logo={logoW}
+          color={'#fff'}
+          loginColor={'#fff'}
+          loginTextColor={'#fff'}
+        />
 
-      <Box color={"#fff"} my="70px">
-        <Text fontSize={"60px"} fontWeight={"bold"}>
-          Pricing that scales for EV charger management
-        </Text>
-        <Text fontWeight={"medium"} fontSize={"18px"} my={"20px"} maxW={"800px"} >
-          ChargeLab network services can be purchased from an authorized
-          reseller. If you are an EV charger manufacturer, network operator, or
-          turnkey installer of EV chargers, contact us directly for pricing.
-        </Text>
-      </Box>
+        <Box my={{ base: '40px', lg: '60px', xl: '50px' }} color={'#fff'}>
+          <MainHeading>
+            Pricing that scales for EV charger management
+          </MainHeading>
+          <CustomText my={'20px'} maxW={'800px'}>
+            ChargeLab network services can be purchased from an authorized
+            reseller. If you are an EV charger manufacturer, network operator,
+            or turnkey installer of EV chargers, contact us directly for
+            pricing.
+          </CustomText>
+        </Box>
+      </Wrapper>
     </Box>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

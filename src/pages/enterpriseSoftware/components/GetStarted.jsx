@@ -1,32 +1,34 @@
-import { Box, Text } from '@chakra-ui/react'
-import React from 'react'
+import { Box, } from '@chakra-ui/react'
 import { CustomButton } from '../../../components/CustomButton'
+import { CustomText, SubHeading, Wrapper } from '../../../components'
 
 const GetStarted = () => {
   return (
     <Box
-      p={['20px 30px', '20px 30px', '20px 30px', '20px 150px']}
       justifyContent={'center'}
-      bg={'#fff'}
+      bg={'#000'}
       // h={"100vh"}
     >
-      <Box my="50px">
-        <Text fontSize={'35px'} fontWeight={'bold'}>
-          Let's get started
-        </Text>
-        <Text maxW={'400px'} fontWeight={'medium'} fontSize={'18px'}>
-          EV charging doesn't have to be complicated. ChargeLab is your end-to-end EV infrastructure
-          solution.
-        </Text>
-        <Box mt="30px">
-          <CustomButton
-            btnText={'Contact us'}
-            bg={'green.300'}
-            borderRadius={'50px'}
-            color={'#fff'}
-          />
+      <Wrapper>
+        <Box textColor={'white'}>
+          <SubHeading>Let&apos;s Get You Started</SubHeading>
+          <CustomText maxW={'700px'} pt={{ base: '30px', xl: '20px' }}>
+            Thinking of starting an EV charging business or already have
+            chargers and not sure how to make money from them? With Vine
+            Mobility, getting set up is simple. From powerful software to
+            hands-on support, we’ll help you launch, manage, and monetize your
+            chargers with ease.
+          </CustomText>
+          <Box mt="30px">
+            <CustomButton
+              btnText={'Contact us'}
+              bg={'green.300'}
+              borderRadius={'50px'}
+              color={'#fff'}
+            />
+          </Box>
         </Box>
-      </Box>
+      </Wrapper>
     </Box>
   )
 }

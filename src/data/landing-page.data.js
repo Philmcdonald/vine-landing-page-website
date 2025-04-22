@@ -14,15 +14,15 @@ export const card = [
       { text: 'white-label solutions', style: { color: 'blue' } },
     ],
   },
-  {
-    title: 'Site managers',
-    content: [
-      'If your sell or install EV Chargers, operate a charging network or manage a large fleet, learn about our ',
-      { text: 'enterprise software', style: { color: 'blue' } },
-      ' and ',
-      { text: 'white-label solutions', style: { color: 'blue' } },
-    ],
-  },
+  // {
+  //   title: 'Site managers',
+  //   content: [
+  //     'If your sell or install EV Chargers, operate a charging network or manage a large fleet, learn about our ',
+  //     { text: 'enterprise software', style: { color: 'blue' } },
+  //     ' and ',
+  //     { text: 'white-label solutions', style: { color: 'blue' } },
+  //   ],
+  // },
   {
     title: 'EV drivers',
     content: [
@@ -45,7 +45,7 @@ export const platform = [
     src: motor,
     title: 'Open & interoperable',
     content:
-      "ChargeLab has verified 30+ OCPP chargers from over a dozen  manufacturers. We're compatible with any OCPP hardware.",
+      "Vine Mobility has verified 30+ OCPP chargers from over a dozen  manufacturers. We're compatible with any OCPP hardware.",
   },
   {
     src: tablet,
@@ -57,7 +57,7 @@ export const platform = [
     src: yatch,
     title: ' Future-proofed',
     content:
-      "ChargeLab's cutting-edge microservices architecture makes our CSMS the most scalable solution on the market.",
+      "Vine Mobility's cutting-edge microservices architecture makes our CSMS the most scalable solution on the market.",
   },
 ]
 
@@ -65,18 +65,18 @@ export const testimony = [
   {
     name: 'Jack Bauwer',
     title: 'CEO of EV Charger',
-    content: `Obtaining CTEP certification [with ChargeLab] for our DirectPowerPS 360 DC fast chargers is a significant achievement. It's a testament to our commitment to delivering cutting-edge,
+    content: `Obtaining CTEP certification [with Vine Mobility] for our DirectPowerPS 360 DC fast chargers is a significant achievement. It's a testament to our commitment to delivering cutting-edge,
                 compliant charging solutions.`,
   },
   {
     name: 'Paul Ryan',
     title: 'CEO of EV Charger',
-    content: `ChargeLab has been a people driven business from day one. It's been the same mission to essentially put customers first. That's what's been really key with the success of ChargeLab. Investors have invested in ChargeLab and you've have built up a huge reputation in space. It's all because of people."`,
+    content: `Vine Mobility has been a people driven business from day one. It's been the same mission to essentially put customers first. That's what's been really key with the success of Vine Mobility. Investors have invested in Vine Mobility and you've have built up a huge reputation in space. It's all because of people."`,
   },
   {
     name: 'Paul Ryan',
     title: 'CEO of EV Charger',
-    content: `Obtaining CTEP certification [with ChargeLab] for our
+    content: `Obtaining CTEP certification [with Vine Mobility] for our
                 DirectPowerPS 360 DC fast chargers is a significant achievement.
                 It's a testament to our commitment to delivering cutting-edge,
                 compliant charging solutions.`,

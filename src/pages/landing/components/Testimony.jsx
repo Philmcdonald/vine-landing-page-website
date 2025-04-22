@@ -1,6 +1,5 @@
 import { Box, Grid, Text } from '@chakra-ui/react'
 import Wrapper from '../../../components/Wrapper'
-import React from 'react'
 import CustomText from '../../../components/CustomText'
 import { testimony } from '../../../data/landing-page.data'
 import { SubHeading } from '../../../components'
@@ -37,6 +36,7 @@ const Testimony = () => {
             {testimony.map(({ name, title, content }) => {
               return (
                 <Box
+                  key={title}
                   bg={'#fff'}
                   borderRadius={'10px'}
                   p="20px"

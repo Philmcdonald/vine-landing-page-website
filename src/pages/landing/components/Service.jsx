@@ -1,20 +1,20 @@
-import { Box, Grid, Text } from '@chakra-ui/react'
+import { Box, Flex, Text } from '@chakra-ui/react'
 import Wrapper from '../../../components/Wrapper'
-import React from 'react'
 import CustomText from '../../../components/CustomText'
 import { card } from '../../../data/landing-page.data'
 
 const Service = () => {
   return (
-    <Box bg={'#FFF'}>
+    <Box bg={'#FFF'} mt={{ base: '-0.5', xl: '-70px' }}>
       <Wrapper
         py={{
           base: '45px',
           xl: '100px',
         }}
       >
-        <Grid
-          templateColumns={{ base: '1fr', md: '1fr', lg: '1fr 1fr 1fr' }}
+        <Flex
+          flexDirection={{ base: 'column', xl: 'row' }}
+          justifyContent={'center'}
           h={'fit-content'}
           gap={5}
         >
@@ -26,6 +26,8 @@ const Service = () => {
                 p={{ base: '0px', md: '20px' }}
                 flex={1}
                 textAlign={{ base: 'left' }}
+                maxW={{ base: '100%', xl: '30%' }}
+                key={title}
               >
                 <Text fontSize="25px" fontWeight={'bold'} py={'10px'}>
                   {title}
@@ -45,7 +47,7 @@ const Service = () => {
               </Box>
             )
           })}
-        </Grid>
+        </Flex>
       </Wrapper>
     </Box>
   )

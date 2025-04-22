@@ -1,73 +1,47 @@
 import { Box, Grid, Image, Text } from '@chakra-ui/react'
-import React from 'react'
-import b1 from '../../../assets/b1.svg'
-import b2 from '../../../assets/b2.svg'
-import b3 from '../../../assets/b3.svg'
-import b4 from '../../../assets/b4.svg'
 import Wrapper from '../../../components/Wrapper'
+import { Benefits } from '../data'
+import { CustomText, InfoHeading, SubHeading } from '../../../components'
 
 const Benefit = () => {
   return (
-    <Box bg={'#fff'} justifyContent={'center'} h={'fit-content'}>
+    <Box bg={'#000'} justifyContent={'center'} h={'fit-content'}>
       <Wrapper>
-        <Box maxW={'600px'}>
-          <Text color="blue.300" fontWeight={'bold'} fontSize={'25px'}>
-            Key benefits
-          </Text>
-          <Text fontSize={'30px'} fontWeight={'bold'} py="20px">
-            Help power the future
-          </Text>
-          <Text fontWeight={'medium'} fontSize={'20px'}>
+        <Box maxW={'600px'} color={'#fff'}>
+          <InfoHeading color="blue.300">Key benefits</InfoHeading>
+          <SubHeading py="20px">Help power the future</SubHeading>
+          <CustomText fontWeight={'medium'} fontSize={'20px'}>
             Depending on your location, workplace charging is quickly turning
             from a perk to an expectation. In either case, installing EV
             chargers at your office building is a convenient way to attract
             tenants, retain employees, meet sustainability goals, and more.
-          </Text>
+          </CustomText>
         </Box>
-        <Grid templateColumns="repeat(4, 1fr)" gap={10} mt="50px">
-          <Box maxW={'300px'} color={'#000'}>
-            <Image src={b1} h={'50px'} />
-            <Text py="10px" fontSize={'18px'} fontWeight={'bold'}>
-              A home for garage orphans
-            </Text>
-            <Text>
-              EV drivers who can't charge at home depend on workplace charging
-              to stay topped up.
-            </Text>
-          </Box>
-          <Box maxW={'300px'} color={'#000'}>
-            <Image src={b2} h={'50px'} />
-            <Text py="10px" fontSize={'18px'} fontWeight={'bold'}>
-              Retain employees
-            </Text>
-            <Text>
-              Build loyalty and corporate culture by offering EV charging as a
-              perk.
-            </Text>
-          </Box>
-          <Box maxW={'300px'} color={'#000'}>
-            <Image src={b3} h={'50px'} />
-            <Text py="10px" fontSize={'18px'} fontWeight={'bold'}>
-              Attract tenants
-            </Text>
-            <Text>
-              Companies are more likely to lease office space in buildings with
-              EV chargers.
-            </Text>
-          </Box>
-          <Box maxW={'300px'} color={'#000'}>
-            <Image src={b4} h={'50px'} />
-            <Text py="10px" fontSize={'18px'} fontWeight={'bold'}>
-              Achieve sustainability goals
-            </Text>
-            <Text>
-              Earn LEED points and other green building certifications. Comply
-              with any local EV regulation.
-            </Text>
-            {/* <CustomButton btnText={"Learn more"} color={"blue.300"} bg={"none"} px={"0px"}/> */}
-          </Box>
+        <Grid
+          templateColumns={{ base: '1fr', xl: 'repeat(4, 1fr)' }}
+          gap={10}
+          my={{ base: '20px', xl: '50px' }}
+        >
+          {Benefits.map(({ title, img, content }) => {
+            return (
+              <Box color={'#fff'} key={title}>
+                <Image
+                  src={img}
+                  h={{ base: '38px', md: '40px' }}
+                  mb={{ base: '10px', md: '' }}
+                />
+                <Text
+                  py="10px"
+                  fontSize={{ base: '16px', md: '15px' }}
+                  fontWeight={'bold'}
+                >
+                  {title}
+                </Text>
+                <Text fontSize={{ base: '14px', md: '14px' }}>{content}</Text>
+              </Box>
+            )
+          })}
         </Grid>
-        <Box></Box>
       </Wrapper>
     </Box>
   )

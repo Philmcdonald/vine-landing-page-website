@@ -1,47 +1,54 @@
-import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react";
-import React from "react";
-import FormInput from "../../../components/FormInput"
-import { CustomButton } from "../../../components/CustomButton";
-import form1 from "../../../assets/form1.svg"
-import form2 from "../../../assets/form2.svg"
-import form3 from "../../../assets/form3.svg"
-import form4 from "../../../assets/form4.svg"
+import { Box, Flex, Grid } from '@chakra-ui/react'
+import FormInput from '../../../components/FormInput'
+import { CustomButton } from '../../../components/CustomButton'
+import { CustomText, SubHeading, Wrapper } from '../../../components'
 
 const Form = () => {
   return (
-    <Box
-      p={["20px 30px", "20px 30px", "20px 30px", "20px 150px"]}
-      bg={"#fff"}
-      justifyContent={"center"}
-      h={"fit-content"}
-    >
-    <Flex my="70px" justify={"center"} gap={"100px"}>
-        <Box bg={"#fff"} p={"30px"} borderRadius={"10px"} border={'1px solid #eee'} boxShadow={"lg"}>
-            <Flex align={"center"} gap={"10px"}>
-              <FormInput label={"FIRST NAME"}/>  
-              <FormInput label={"LAST NAME"}/>
+    <Box bg={'#000'} justifyContent={'center'} h={'fit-content'}>
+      <Wrapper>
+        <Grid
+          gridTemplateColumns={{ base: '1fr', xl: '1fr 1fr' }}
+          justify={'center'}
+          gap={{ base: '50px', xl: '100px' }}
+        >
+          <Box
+            bg={'#fff'}
+            p={'30px'}
+            borderRadius={'10px'}
+            border={'1px solid #eee'}
+            boxShadow={'lg'}
+          >
+            <Flex align={'center'} gap={'10px'}>
+              <FormInput label={'FIRST NAME'} />
+              <FormInput label={'LAST NAME'} />
             </Flex>
-            <Flex my={"20px"}>
-                <FormInput label={"BUSINESS EMAIL "}/>
+            <Flex my={'20px'}>
+              <FormInput label={'BUSINESS EMAIL '} />
             </Flex>
-            <Flex align={"center"} gap={"10px"}>
-              <FormInput label={"PHONE NUMBER"}/>  
-              <FormInput label={"COMPANY NAME"}/>
+            <Flex align={'center'} gap={'10px'}>
+              <FormInput label={'PHONE NUMBER'} />
+              <FormInput label={'COMPANY NAME'} />
             </Flex>
-            <Flex my={"20px"}>
-                <FormInput label={"HOW CAN WE HELP YOU?"} lines={5}/>
+            <Flex my={'20px'}>
+              <FormInput label={'HOW CAN WE HELP YOU?'} lines={5} />
             </Flex>
-            <Flex my={"30px"}>
-                <CustomButton btnText={"submit"} color={"#fff"} bg={"blue.300"} w={"full"}/>
+            <Flex my={'30px'}>
+              <CustomButton
+                btnText={'submit'}
+                color={'#fff'}
+                bg={'blue.300'}
+                w={'full'}
+              />
             </Flex>
+          </Box>
 
-        </Box>
-
-        <Box>
-            <Text fontSize={"30px"} fontWeight={"bold"}>Let's get started</Text>
-            <Text maxW={"400px"} fontWeight={"medium"} fontSize={"18px"}>
-            EV charging doesn't have to be complicated. ChargeLab is your end-to-end EV infrastructure solution.
-            </Text>
+          <Box color={'#fff'}>
+            <SubHeading>Let&apos;s get started</SubHeading>
+            <CustomText py={{ base: '15px', xl: '20px' }} maxW={'400px'}>
+              EV charging doesn&apos;t have to be complicated. ChargeLab is your
+              end-to-end EV infrastructure solution.
+            </CustomText>
             {/* <Grid templateColumns='repeat(2, 1fr)' gap={10} my="50px">
                       <Box maxW={"300px"} color={"#000"}>
                         <Image src={form1} h={"50px"} />
@@ -85,11 +92,11 @@ const Form = () => {
             
                       
                     </Grid> */}
-        </Box>
-
-    </Flex>
+          </Box>
+        </Grid>
+      </Wrapper>
     </Box>
-  );
-};
+  )
+}
 
-export default Form;
+export default Form
