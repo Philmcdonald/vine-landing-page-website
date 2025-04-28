@@ -10,7 +10,7 @@ const Benefit = () => {
         <Box maxW={'600px'} color={'#fff'}>
           <InfoHeading>Key benefits</InfoHeading>
           <SubHeading py="20px">Help power the future</SubHeading>
-          <CustomText fontWeight={'medium'} fontSize={'20px'}>
+          <CustomText fontWeight={'medium'}>
             Depending on your location, workplace charging is quickly turning
             from a perk to an expectation. In either case, installing EV
             chargers at your office building is a convenient way to attract

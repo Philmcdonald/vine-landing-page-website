@@ -32,7 +32,7 @@ const Form = () => {
               my="30px"
             >
               <Box>
-                <Image src={o1} h={'40px'} />
+                <Image src={o1} h={{ base: '35px', md: '40px' }} />
                 <Text fontWeight={'bold'} py="10px">
                   EV charger management
                 </Text>
@@ -40,36 +40,20 @@ const Form = () => {
                   Connect & control any OCPP EV charger that has been approved
                   by ChargeLab.
                 </Text>
-                <CustomButton
-                  btnText={'Compatible hardware'}
-                  bg={'none'}
-                  color={'#8fc03f'}
-                  fontWeight="bold"
-                  px={'0px'}
-                  fontSize={'18px'}
-                />
               </Box>
 
               <Box>
-                <Image src={o2} h={'40px'} />
+                <Image src={o2} h={{ base: '35px', md: '40px' }} />
                 <Text fontWeight={'bold'} py="10px">
                   Turnkey install services
                 </Text>
                 <Text fontWeight={'medium'}>
                   Hardware, software, and install services all in one place.
                 </Text>
-                <CustomButton
-                  btnText={'Learn more'}
-                  color={'#8fc03f'}
-                  bg={'none'}
-                  fontWeight="bold"
-                  px={'0px'}
-                  fontSize={'18px'}
-                />
               </Box>
 
               <Box>
-                <Image src={o3} h={'40px'} />
+                <Image src={o3} h={{ base: '35px', md: '40px' }} />
                 <Text fontWeight={'bold'} py="10px">
                   Collect Revenue
                 </Text>

@@ -24,7 +24,7 @@ const Footer = () => {
               <LiaLinkedin size={25} />
               <BsInstagram size={25} />
             </Flex>
-            <Text>© VineLab Inc.</Text>
+            <Text>© Vine Mobility Inc.</Text>
           </Box>
 
           <Box>
@@ -37,7 +37,7 @@ const Footer = () => {
                   <Text>Enterprise Software - VineCharge</Text>
                 </Link>
                 <Link to={'/vine-volts-app'}>
-                  <Text>Driver&apos;s App - Vine Volts</Text>
+                  <Text>Driver&apos;s App - VineVolts</Text>
                 </Link>
               </Flex>
             </Box>

@@ -17,7 +17,7 @@ const Benefit = () => {
           <SubHeading>
             Support your community & attract the best kind of customers
           </SubHeading>
-          <CustomText>
+          <CustomText mt={{ base: '15px', xl: '' }}>
             EV drivers spend time and money where they charge. Install public EV
             chargers to attract customers or visitors to your location.
           </CustomText>

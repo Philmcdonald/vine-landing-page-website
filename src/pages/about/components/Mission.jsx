@@ -12,8 +12,8 @@ const Mission = () => {
           accounts for a significant share of global emissions, and in Africa,
           growing urbanization means mobility demand is rising fast. We believe
           the shift to electric vehicles (EVs) represents more than just a new
-          way to move, it&apos;s a new way to think about energy, infrastructure, and
-          sustainability.
+          way to move, it&apos;s a new way to think about energy,
+          infrastructure, and sustainability.
         </CustomText>
         <CustomText maxW={'900px'}>
           Vine Mobility’s mission is to make EV charging simple, smart, and
@@ -29,7 +29,7 @@ const Mission = () => {
           challenges of African cities from power reliability to grid
           limitations.
         </CustomText>
-        <CustomText fontSize={'18px'} maxW={'900px'}>
+        <CustomText maxW={'900px'}>
           The switch to EVs is one of the most transformative shifts of our
           generation. At Vine Mobility, we’re not waiting for it to happen,
           we’re building the software to drive it.

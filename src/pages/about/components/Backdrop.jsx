@@ -16,7 +16,7 @@ const Backdrop = () => {
           <Box color={'#fff'}>
             <SubHeading>Want to react us directly?</SubHeading>
             <CustomText py={{ base: '10px', xl: '20px' }}>
-              Call or email ChargeLab today:
+              Call or Email Vine Mobility today:
             </CustomText>
             <CustomButton btnText={'Contact us'} />
           </Box>

@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { FaTimes } from 'react-icons/fa'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { Link } from 'react-router-dom'
-import { FaChevronUp, FaChevronDown } from 'react-icons/fa' // Ensure proper imports
+import { FaPlus, FaMinus } from 'react-icons/fa' // Ensure proper imports
 
 function MobileHamBugerNav({ ...props }) {
   const [show, setShow] = useState(false)
@@ -29,7 +29,7 @@ function MobileHamBugerNav({ ...props }) {
           right="0"
           top="0"
           w="90%"
-          bg={`linear-gradient(to bottom right, #FFF3B0, #D9D9D9)`}
+          bg={'#fff'}
           zIndex={1022}
           padding="20px"
         >
@@ -65,26 +65,34 @@ function MobileHamBugerNav({ ...props }) {
                   cursor="pointer"
                   onClick={() => toggleSection('product')}
                   w="100%"
+                  color="#95979b"
                 >
                   <Text
                     textTransform={'uppercase'}
-                    fontSize="1em"
+                    fontSize="12px"
                     fontWeight="bold"
                   >
                     Product
                   </Text>
                   <Icon
-                    as={openSection === 'product' ? FaChevronUp : FaChevronDown}
-                    fontSize="1em"
+                    as={openSection === 'product' ? FaPlus : FaMinus}
+                    fontSize="12px"
                   />
                 </Flex>
                 <Collapse in={openSection === 'product'}>
-                  <Flex direction="column" alignItems="flex-start" mt={2}>
+                  <Flex
+                    direction="column"
+                    gap="15px"
+                    alignItems="flex-start"
+                    mt="20px"
+                    ml="5px"
+                    fontSize="15px"
+                  >
                     <Link
                       to="/enterprise-software"
                       onClick={() => setShow(false)}
                     >
-                      <Text>Enterprise Software - Vine Charge</Text>
+                      <Text>Enterprise Software - VineCharge</Text>
                     </Link>
                     <Link to="/vine-volts-app" onClick={() => setShow(false)}>
                       <Text>Driver's app - VineVolts</Text>
@@ -101,23 +109,29 @@ function MobileHamBugerNav({ ...props }) {
                   cursor="pointer"
                   onClick={() => toggleSection('usecases')}
                   w="100%"
+                  color="#95979b"
                 >
                   <Text
                     textTransform={'uppercase'}
-                    fontSize="1em"
+                    fontSize="12px"
                     fontWeight="bold"
                   >
                     Use Cases
                   </Text>
                   <Icon
-                    as={
-                      openSection === 'usecases' ? FaChevronUp : FaChevronDown
-                    }
-                    fontSize="1em"
+                    as={openSection === 'usecases' ? FaPlus : FaMinus}
+                    fontSize="13px"
                   />
                 </Flex>
                 <Collapse in={openSection === 'usecases'}>
-                  <Flex direction="column" alignItems="flex-start" mt={2}>
+                  <Flex
+                    direction="column"
+                    alignItems="flex-start"
+                    gap="15px"
+                    mt="20px"
+                    ml="5px"
+                    fontSize="15px"
+                  >
                     <Link to="/public" onClick={() => setShow(false)}>
                       <Text>Public</Text>
                     </Link>
@@ -136,23 +150,23 @@ function MobileHamBugerNav({ ...props }) {
                   cursor="pointer"
                   onClick={() => toggleSection('resources')}
                   w="100%"
+                  color="#95979b"
+                  fontSize="12px"
                 >
-                  <Text
-                    textTransform={'uppercase'}
-                    fontSize="1em"
-                    fontWeight="bold"
-                  >
+                  <Text textTransform={'uppercase'} fontWeight="bold">
                     Resource
                   </Text>
-                  <Icon
-                    as={
-                      openSection === 'resources' ? FaChevronUp : FaChevronDown
-                    }
-                    fontSize="1em"
-                  />
+                  <Icon as={openSection === 'resources' ? FaPlus : FaMinus} />
                 </Flex>
                 <Collapse in={openSection === 'resources'}>
-                  <Flex direction="column" alignItems="flex-start" mt={2}>
+                  <Flex
+                    direction="column"
+                    alignItems="flex-start"
+                    mt="20px"
+                    fontSize="15px"
+                    gap="15px"
+                    ml="5px"
+                  >
                     <Link to="/about" onClick={() => setShow(false)}>
                       <Text>About</Text>
                     </Link>
@@ -174,21 +188,23 @@ function MobileHamBugerNav({ ...props }) {
                   cursor="pointer"
                   onClick={() => toggleSection('connect')}
                   w="100%"
+                  color="#95979b"
+                  fontSize="12px"
                 >
-                  <Text
-                    textTransform={'uppercase'}
-                    fontSize="1em"
-                    fontWeight="bold"
-                  >
+                  <Text textTransform={'uppercase'} fontWeight="bold">
                     Connect
                   </Text>
-                  <Icon
-                    as={openSection === 'connect' ? FaChevronUp : FaChevronDown}
-                    fontSize="1em"
-                  />
+                  <Icon as={openSection === 'connect' ? FaPlus : FaMinus} />
                 </Flex>
                 <Collapse in={openSection === 'connect'}>
-                  <Flex direction="column" alignItems="flex-start" mt={2}>
+                  <Flex
+                    mt="20px"
+                    ml="5px"
+                    fontSize="15px"
+                    direction="column"
+                    alignItems="flex-start"
+                    gap="15px"
+                  >
                     <Link to="/contact" onClick={() => setShow(false)}>
                       <Text>Contact Us</Text>
                     </Link>

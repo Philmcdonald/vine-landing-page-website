@@ -25,7 +25,7 @@ const Features = () => {
         <Grid
           templateColumns={{ base: '1fr', xl: 'repeat(4, 1fr)' }}
           gap={10}
-          mt="50px"
+          mt={{ base: '20px', xl: '40px' }}
         >
           {features.map(({ title, content, img }) => {
             return (

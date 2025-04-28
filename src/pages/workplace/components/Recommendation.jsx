@@ -12,9 +12,7 @@ const Recommendation = () => {
       <Wrapper>
         <Box maxW={'600px'}>
           <InfoHeading>Recommended hardware</InfoHeading>
-          <SubHeading fontSize={'30px'} fontWeight={'bold'} py="20px">
-            Top EV Chargers for Workplaces
-          </SubHeading>
+          <SubHeading>Top EV Chargers for Workplaces</SubHeading>
           <CustomText>
             VineCharge supports all OCPP-compliant chargers. Here are some great
             options for keeping your team or visitors charged at work.

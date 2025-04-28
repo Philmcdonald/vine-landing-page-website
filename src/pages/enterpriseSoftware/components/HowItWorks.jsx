@@ -17,8 +17,7 @@ const HowItWorks = () => {
           <CustomText py="20px">
             The VineCharge platform is built to work seamlessly with all
             OCPP-compatible chargers. Our system is flexible, future-proof, and
-            hardware-neutral. Select an EV charger manufacturer below to see how
-            VineCharge platform works.
+            hardware-neutral.
           </CustomText>
         </Box>
       </Wrapper>

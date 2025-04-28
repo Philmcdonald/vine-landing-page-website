@@ -12,7 +12,7 @@ const GetStarted = () => {
       <Wrapper>
         <Box textColor={'white'}>
           <SubHeading>Let&apos;s Get You Started</SubHeading>
-          <CustomText maxW={'700px'} pt={{ base: '30px', xl: '20px' }}>
+          <CustomText maxW={'700px'} pt={{ base: '15px', xl: '20px' }}>
             Thinking of starting an EV charging business or already have
             chargers and not sure how to make money from them? With VineCharge,
             getting set up is simple. From powerful software to hands-on

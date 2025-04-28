@@ -36,6 +36,7 @@ const ReusableForm = () => {
     <Box
       bg={'#fff'}
       p={{ base: '20px', xl: '40px' }}
+      pt={{ base: '40px' }}
       borderRadius={'10px'}
       border={'1px solid #eee'}
       boxShadow={'lg'}

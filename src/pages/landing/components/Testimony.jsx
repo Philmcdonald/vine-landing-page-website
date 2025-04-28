@@ -17,7 +17,7 @@ const Testimony = () => {
             textAlign={'center'}
             fontSize={'18px'}
             fontWeight={{ base: 'normal', xl: 'medium' }}
-            mt="20px"
+            mt={{ base: '10px', xl: '20px' }}
           >
             We make money when you make money.
           </Text>
