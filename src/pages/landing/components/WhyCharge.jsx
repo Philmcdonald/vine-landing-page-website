@@ -1,6 +1,6 @@
 import { Box, Image, Grid } from '@chakra-ui/react'
 import chargeMobile from '../../../assets/mobile.png'
-import chargeDashboard from '../../../assets/VineCharge.png'
+import chargeDashboard from '../../../assets/vineCharge.png'
 import Wrapper from '../../../components/Wrapper'
 import CustomText from '../../../components/CustomText'
 import SubHeading from '../../../components/SubHeading'
