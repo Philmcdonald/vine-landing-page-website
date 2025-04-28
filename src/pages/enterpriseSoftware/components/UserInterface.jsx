@@ -2,7 +2,7 @@ import { Box, Grid, Image, Text } from '@chakra-ui/react'
 
 import u3 from '../../../assets/u3.svg'
 import { CustomButton } from '../../../components/CustomButton'
-import { CustomText, Wrapper } from '../../../components'
+import { CustomText, SubHeading, Wrapper } from '../../../components'
 import { userInterface } from '../data'
 import { Link } from 'react-router-dom'
 
@@ -11,10 +11,8 @@ const UserInterface = () => {
     <Box bg={'#fff'} justifyContent={'center'}>
       <Wrapper>
         <Box maxW={'600px'}>
-          <Text fontSize={'40px'} fontWeight={'bold'}>
-            End-User Interfaces
-          </Text>
-          <CustomText py="20px">
+          <SubHeading>End-User Interfaces</SubHeading>
+          <CustomText mt={{ base: '20px', xl: '50px' }}>
             We’re big on user experience because EV charging should be simple,
             smooth, and stress-free.
           </CustomText>
@@ -23,14 +21,14 @@ const UserInterface = () => {
         <Grid
           templateColumns={{ base: '1fr', xl: 'repeat(3, 1fr)' }}
           gap={10}
-          my="50px"
+          my={{ base: '30px', xl: '50px' }}
         >
           {userInterface.map(({ title, src, content }) => {
             return (
               <Box color={'#000'} key={title}>
                 <Image
                   src={src}
-                  h={{ base: '38px', md: '40px' }}
+                  h={{ base: '35px', md: '40px' }}
                   mb={{ base: '10px', md: '' }}
                 />
                 <Text

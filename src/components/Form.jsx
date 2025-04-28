@@ -40,7 +40,7 @@ const ReusableForm = () => {
       border={'1px solid #eee'}
       boxShadow={'lg'}
       flex={1}
-      w={'95%'}
+      w={{ base: '100%', xl: '95%' }}
     >
       <Grid
         gap={{ base: '15px', xl: '20px' }}

@@ -20,7 +20,7 @@ const Hero = () => {
       >
         <Flex
           flexDirection={{ base: 'column', xl: 'row' }}
-          mt={{ base: '50px', xl: '40px' }}
+          mt={{ base: '28px', xl: '40px' }}
           mb={{ base: '20px', xl: '30px' }}
           align={'center'}
           position={'relative'}

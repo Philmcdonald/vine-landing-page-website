@@ -5,7 +5,7 @@ const CustomText = ({ children, ...props }) => {
     <Text
       fontWeight={{ base: 'normal' }}
       lineHeight={{ base: '1.5' }}
-      fontSize={{ base: '18px' }}
+      fontSize={{ base: '15px', xl: '18px' }}
       {...props}
     >
       {children}

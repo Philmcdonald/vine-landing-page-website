@@ -42,7 +42,8 @@ const Testimony = () => {
                   key={title}
                   bg={'#fff'}
                   borderRadius={'10px'}
-                  p="20px"
+                  px={{ base: '18px', xl: '20px' }}
+                  py={{ base: '30px', xl: '40px' }}
                   maxW={{ base: '100%', xl: '300px' }}
                   transition="transform 0.3s ease"
                   _hover={{
@@ -54,7 +55,7 @@ const Testimony = () => {
                     {name}
                   </Text>
                   <Text fontWeight={'medium'}>{title}</Text>
-                  <CustomText fontSize={{ base: '16px' }} pt="20px">
+                  <CustomText fontSize={{ base: '14px', xl: '16px' }} pt="20px">
                     {content}
                   </CustomText>
                 </Box>

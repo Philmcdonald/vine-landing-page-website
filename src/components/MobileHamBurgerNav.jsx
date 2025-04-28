@@ -26,10 +26,9 @@ function MobileHamBugerNav({ ...props }) {
         <Box
           position="fixed"
           bottom={'0'}
-          left="0"
           right="0"
           top="0"
-          w="100%"
+          w="90%"
           bg={`linear-gradient(to bottom right, #FFF3B0, #D9D9D9)`}
           zIndex={1022}
           padding="20px"
@@ -50,6 +49,7 @@ function MobileHamBugerNav({ ...props }) {
               color="black"
             />
             <Flex
+              mt={'3rem'}
               gap="20px"
               flexDir={'column'}
               alignItems="flex-start"
@@ -58,7 +58,7 @@ function MobileHamBugerNav({ ...props }) {
               w="100%"
             >
               {/* Product Section */}
-              <Box>
+              <Box pb="10px" w="100%">
                 <Flex
                   alignItems="center"
                   justifyContent="space-between"
@@ -66,12 +66,16 @@ function MobileHamBugerNav({ ...props }) {
                   onClick={() => toggleSection('product')}
                   w="100%"
                 >
-                  <Text fontSize="1.5em" fontWeight="bold">
+                  <Text
+                    textTransform={'uppercase'}
+                    fontSize="1em"
+                    fontWeight="bold"
+                  >
                     Product
                   </Text>
                   <Icon
                     as={openSection === 'product' ? FaChevronUp : FaChevronDown}
-                    fontSize="1.5em"
+                    fontSize="1em"
                   />
                 </Flex>
                 <Collapse in={openSection === 'product'}>
@@ -90,7 +94,7 @@ function MobileHamBugerNav({ ...props }) {
               </Box>
 
               {/* Use Cases Section */}
-              <Box>
+              <Box pb="10px" w="100%">
                 <Flex
                   alignItems="center"
                   justifyContent="space-between"
@@ -98,14 +102,18 @@ function MobileHamBugerNav({ ...props }) {
                   onClick={() => toggleSection('usecases')}
                   w="100%"
                 >
-                  <Text fontSize="1.5em" fontWeight="bold">
+                  <Text
+                    textTransform={'uppercase'}
+                    fontSize="1em"
+                    fontWeight="bold"
+                  >
                     Use Cases
                   </Text>
                   <Icon
                     as={
                       openSection === 'usecases' ? FaChevronUp : FaChevronDown
                     }
-                    fontSize="1.5em"
+                    fontSize="1em"
                   />
                 </Flex>
                 <Collapse in={openSection === 'usecases'}>
@@ -121,7 +129,7 @@ function MobileHamBugerNav({ ...props }) {
               </Box>
 
               {/* Resources Section */}
-              <Box>
+              <Box pb="10px" w="100%">
                 <Flex
                   alignItems="center"
                   justifyContent="space-between"
@@ -129,14 +137,18 @@ function MobileHamBugerNav({ ...props }) {
                   onClick={() => toggleSection('resources')}
                   w="100%"
                 >
-                  <Text fontSize="1.5em" fontWeight="bold">
+                  <Text
+                    textTransform={'uppercase'}
+                    fontSize="1em"
+                    fontWeight="bold"
+                  >
                     Resource
                   </Text>
                   <Icon
                     as={
                       openSection === 'resources' ? FaChevronUp : FaChevronDown
                     }
-                    fontSize="1.5em"
+                    fontSize="1em"
                   />
                 </Flex>
                 <Collapse in={openSection === 'resources'}>
@@ -155,7 +167,7 @@ function MobileHamBugerNav({ ...props }) {
               </Box>
 
               {/* Connect Section */}
-              <Box>
+              <Box pb="10px" w="100%">
                 <Flex
                   alignItems="center"
                   justifyContent="space-between"
@@ -163,12 +175,16 @@ function MobileHamBugerNav({ ...props }) {
                   onClick={() => toggleSection('connect')}
                   w="100%"
                 >
-                  <Text fontSize="1.5em" fontWeight="bold">
+                  <Text
+                    textTransform={'uppercase'}
+                    fontSize="1em"
+                    fontWeight="bold"
+                  >
                     Connect
                   </Text>
                   <Icon
                     as={openSection === 'connect' ? FaChevronUp : FaChevronDown}
-                    fontSize="1.5em"
+                    fontSize="1em"
                   />
                 </Flex>
                 <Collapse in={openSection === 'connect'}>
@@ -179,11 +195,6 @@ function MobileHamBugerNav({ ...props }) {
                   </Flex>
                 </Collapse>
               </Box>
-
-              {/* Pricing Link */}
-              <Link to="/pricing" onClick={() => setShow(false)}>
-                <Text fontSize="1.5em">Pricing</Text>
-              </Link>
             </Flex>
           </Flex>
         </Box>

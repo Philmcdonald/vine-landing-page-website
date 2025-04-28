@@ -34,11 +34,11 @@ const Form = () => {
             </CustomText>
             <Grid
               gridTemplateColumns={{ base: '1fr', xl: '1fr 1fr' }}
-              gap={{ base: '20px', xl: '30px' }}
-              my="30px"
+              gap={{ base: '25px', xl: '30px' }}
+              my={{ base: '20px', xl: '30px' }}
             >
               <Box>
-                <Image src={o1} h={'40px'} />
+                <Image src={o1} h={{ base: '35px', md: '40px' }} />
                 <Text fontWeight={'bold'} py="10px">
                   EV charger management
                 </Text>
@@ -49,7 +49,7 @@ const Form = () => {
               </Box>
 
               <Box>
-                <Image src={o3} h={'40px'} />
+                <Image src={o3} h={{ base: '35px', md: '40px' }} />
                 <Text fontWeight={'bold'} py="10px">
                   Collect Revenue
                 </Text>
@@ -60,7 +60,7 @@ const Form = () => {
               </Box>
 
               <Box>
-                <Image src={o2} h={'40px'} />
+                <Image src={o2} h={{ base: '35px', md: '40px' }} />
                 <Text fontWeight={'bold'} py="10px">
                   Turnkey install services
                 </Text>
@@ -70,7 +70,7 @@ const Form = () => {
               </Box>
 
               <Box>
-                <Image src={o4} h={'40px'} />
+                <Image src={o4} h={{ base: '35px', md: '40px' }} />
                 <Text fontWeight={'bold'} py="10px">
                   Be discovered
                 </Text>

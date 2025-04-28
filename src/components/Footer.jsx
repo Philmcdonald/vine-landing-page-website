@@ -14,7 +14,7 @@ const Footer = () => {
           my="20px"
           justifyContent={{ base: 'space-between', xl: 'space-between' }}
           gap={{ base: '30px', xl: '20px' }}
-          templateColumns={{ base: 'repeat(2, 1fr)', xl: 'repeat(3, 1fr)' }}
+          templateColumns={{ base: '1fr', xl: 'repeat(3, 1fr)' }}
         >
           <Box>
             <Image src={logoB} h={'40px'} />

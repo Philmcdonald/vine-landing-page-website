@@ -20,7 +20,7 @@ const Hero = () => {
     >
       <Navigation
         logo={logoB}
-        bg="#f7f7f7"
+        bg="#fff"
         color="#000"
         loginTextColor="#fff"
         loginColor="#fff"

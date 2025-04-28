@@ -19,7 +19,7 @@ const Hero = () => {
       >
         <Grid
           gridTemplateColumns={{ base: '1fr', xl: '1fr 1fr' }}
-          mt={{ base: '45px', xl: '70px' }}
+          mt={{ base: '30px', xl: '70px' }}
           mb={{ base: '30px' }}
         >
           <Box maxW={'700px'}>
@@ -40,7 +40,7 @@ const Hero = () => {
                 bg="transparent"
                 _hover={{ bg: 'transparent', border: 'none' }}
               >
-                <Image src={google} />
+                <Image h={{ base: '4rem', xl: '100%' }} src={google} />
               </Button>
             </Flex>
           </Box>

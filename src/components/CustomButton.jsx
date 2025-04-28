@@ -38,10 +38,10 @@ export const CustomButton = ({
     <Button
       leftIcon={leftIcon}
       rightIcon={rightIcon || <IoIosArrowForward />}
-      fontSize={fontSize || '1.2rem'}
+      fontSize={fontSize || { base: '1rem', xl: '1.2rem' }}
       fontFamily={'Inter, sans-serif'}
-      py={py || '1.5rem'}
-      px={px || '20px'}
+      py={py || { base: '1rem', xl: '1.5rem' }}
+      px={px || { base: '15px', xl: '20px' }}
       bg={bg || '#000'}
       color={color || '#fff'}
       _hover={{ hover }}

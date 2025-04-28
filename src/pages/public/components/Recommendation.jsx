@@ -16,7 +16,7 @@ const Recommendation = () => {
       <Wrapper>
         <Box maxW={'600px'}>
           <InfoHeading>Recommended hardware</InfoHeading>
-          <SubHeading py={{ base: '15px', xl: '20px' }}>
+          <SubHeading py={{ base: '', xl: '20px' }}>
             The best EV chargers for public sites
           </SubHeading>
           <CustomText>
@@ -38,7 +38,7 @@ const Recommendation = () => {
             transition="transform 0.5s ease" // Smooth transition for the rotation
             _hover={{ transform: 'scale(1.1)' }} // Rotate by 90 degrees on hover
           >
-            <Image src={charger1} h={'200px'} />
+            <Image mx={'auto'} src={charger1} h={'200px'} />
             <Text fontSize={'20px'} fontWeight={'bold'} py="10px">
               Wallbox Supernova
             </Text>
@@ -60,7 +60,7 @@ const Recommendation = () => {
             transition="transform 0.5s ease" // Smooth transition for the rotation
             _hover={{ transform: 'scale(1.1)' }} // Rotate by 90 degrees on hover
           >
-            <Image src={charger2} h={'200px'} />
+            <Image mx={'auto'} src={charger2} h={'200px'} />
             <Text fontSize={'20px'} fontWeight={'bold'} py="10px">
               Wallbox Supernova
             </Text>
@@ -82,7 +82,7 @@ const Recommendation = () => {
             transition="transform 0.5s ease" // Smooth transition for the rotation
             _hover={{ transform: 'scale(1.1)' }} // Rotate by 90 degrees on hover
           >
-            <Image src={charger3} h={'200px'} />
+            <Image mx={'auto'} src={charger3} h={'200px'} />
             <Text fontSize={'20px'} fontWeight={'bold'} py="10px">
               Wallbox Supernova
             </Text>
@@ -104,7 +104,7 @@ const Recommendation = () => {
             transition="transform 0.5s ease" // Smooth transition for the rotation
             _hover={{ transform: 'scale(1.1)' }} // Rotate by 90 degrees on hover
           >
-            <Image src={charger4} h={'200px'} />
+            <Image mx={'auto'} src={charger4} h={'200px'} />
             <Text fontSize={'20px'} fontWeight={'bold'} py="10px">
               Wallbox Supernova
             </Text>

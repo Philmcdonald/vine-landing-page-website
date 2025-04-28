@@ -44,7 +44,7 @@ const Platform = () => {
               <Box color={'#fff'} key={title}>
                 <Image
                   src={src}
-                  h={{ base: '38px', md: '40px' }}
+                  h={{ base: '35px', md: '40px' }}
                   mb={{ base: '10px', md: '' }}
                 />
                 <Text

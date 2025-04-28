@@ -13,10 +13,8 @@ const Features = () => {
     <Box bg={'#000'} justifyContent={'center'} h={'fit-content'}>
       <Wrapper>
         <Box maxW={'1000px'}>
-          <InfoHeading fontWeight={'bold'} fontSize={'25px'}>
-            Features
-          </InfoHeading>
-          <SubHeading color={'#fff'} py="20px">
+          <InfoHeading>Features</InfoHeading>
+          <SubHeading color={'#fff'} py={{ base: '15px', xl: '20px' }}>
             Enjoy Hassle Free EV Charging Experience
           </SubHeading>
           <CustomText color={'#fff'}>
@@ -34,7 +32,7 @@ const Features = () => {
               <Box color={'#fff'} key={title}>
                 <Image
                   src={img}
-                  h={{ base: '38px', md: '40px' }}
+                  h={{ base: '35px', md: '40px' }}
                   mb={{ base: '10px', md: '' }}
                 />
                 <Text

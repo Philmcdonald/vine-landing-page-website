@@ -14,7 +14,7 @@ const Benefit = () => {
       <Wrapper>
         <Box maxW={'600px'} color={'#fff'}>
           <InfoHeading>Key benefits</InfoHeading>
-          <SubHeading py="20px">
+          <SubHeading>
             Support your community & attract the best kind of customers
           </SubHeading>
           <CustomText>
@@ -32,7 +32,7 @@ const Benefit = () => {
               <Box color={'#fff'} key={title}>
                 <Image
                   src={img}
-                  h={{ base: '38px', md: '40px' }}
+                  h={{ base: '35px', md: '40px' }}
                   mb={{ base: '10px', md: '' }}
                 />
                 <Text

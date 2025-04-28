@@ -25,10 +25,7 @@ const WhyCharge = () => {
               mt={{ base: '20px' }}
               gap={{ base: '30px', md: '30px' }}
             >
-              <CustomText
-                fontSize={{ base: '18px' }}
-                textAlign={{ base: 'left' }}
-              >
+              <CustomText textAlign={{ base: 'left' }}>
                 We deliver complete ecosystem of tools designed for fleet
                 managers, charging network operators, EV infrastructure
                 developers, Energy companies, oil and gas companies, malls,
@@ -42,19 +39,13 @@ const WhyCharge = () => {
                 intelligent charging solutions.
               </CustomText>
 
-              <CustomText
-                fontSize={{ base: '18px' }}
-                textAlign={{ base: 'left' }}
-              >
+              <CustomText textAlign={{ base: 'left' }}>
                 With our robust management system, you can seamlessly integrate
                 and control your entire charging network, regardless of size or
                 complexity. Vine Mobility offers the most reliable framework for
                 expanding your EV charging operations.
               </CustomText>
-              <CustomText
-                fontSize={{ base: '18px' }}
-                textAlign={{ base: 'left' }}
-              >
+              <CustomText textAlign={{ base: 'left' }}>
                 We&apos;re equally passionate about creating exceptional
                 experiences for drivers through our Driver App. Our user-centric
                 design ensures that charging is not just efficient but also
