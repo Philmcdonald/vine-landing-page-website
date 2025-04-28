@@ -6,7 +6,7 @@ import { CustomText, SubHeading, Wrapper } from '../../../components'
 
 const Form = () => {
   return (
-    <Box bg={'#eee'} justifyContent={'center'} h={'fit-content'}>
+    <Box bg={'#f7f7f7'} justifyContent={'center'} h={'fit-content'}>
       <Wrapper>
         <Grid
           gridTemplateColumns={{ base: '', xl: '1fr 1fr' }}
@@ -32,7 +32,7 @@ const Form = () => {
               <CustomButton
                 btnText={'submit'}
                 color={'#fff'}
-                bg={'blue.300'}
+                bg={'#8fc03f'}
                 w={'full'}
               />
             </Flex>

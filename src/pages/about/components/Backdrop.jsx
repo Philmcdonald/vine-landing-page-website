@@ -1,5 +1,6 @@
 import { Box, Flex } from '@chakra-ui/react'
 import { CustomText, SubHeading, Wrapper } from '../../../components'
+import { CustomButton } from '../../../components/CustomButton'
 
 const Backdrop = () => {
   return (
@@ -17,6 +18,7 @@ const Backdrop = () => {
             <CustomText py={{ base: '10px', xl: '20px' }}>
               Call or email ChargeLab today:
             </CustomText>
+            <CustomButton btnText={'Contact us'} />
           </Box>
         </Flex>
       </Wrapper>

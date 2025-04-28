@@ -1,16 +1,16 @@
-import { Box, Flex, Grid, Image } from '@chakra-ui/react'
+import { Box, Flex, Grid } from '@chakra-ui/react'
 import { Text } from '../../../components'
 import Navigation from '../../../components/Nav'
 import { CustomButton } from '../../../components/CustomButton'
 import Wrapper from '../../../components/Wrapper'
 import MainHeading from '../../../components/MainHeader'
-import graphic1 from '../../../assets/graphic1.svg'
-import logoW from '../../../assets/logoW.png'
+// import graphic1 from '../../../assets/graphic1.svg'
+import logoB from '../../../assets/logoB.png'
 
 const Hero = () => {
   return (
     <Box
-      bgGradient="linear(to-r,  #40651a, #3ba936)"
+      bgGradient="linear(to-r,  #8fc03f, #8fc03f)"
       height={'fit-content'}
       clipPath={{
         base: '',
@@ -18,21 +18,20 @@ const Hero = () => {
       }}
       overflow={'hidden'}
     >
+      <Navigation
+        logo={logoB}
+        bg="#f7f7f7"
+        color="#000"
+        loginTextColor="#fff"
+        loginColor="#fff"
+        iconColor="#fff"
+      />
       <Wrapper
         py={{
           base: '10px',
           xl: '30px',
         }}
       >
-        <Navigation
-          logo={logoW}
-          bg="none"
-          color="#fff"
-          loginTextColor="#fff"
-          loginColor="#fff"
-          iconColor="#fff"
-        />
-
         <Grid
           mt={{ lg: '45px', xl: '20px' }}
           templateColumns={{ base: '1fr', lg: '58% 40%' }}
@@ -53,6 +52,7 @@ const Hero = () => {
             </MainHeading>
 
             <Text
+              fontFamily={'Inter, sans-serif'}
               my={{ base: '30px', lg: '20px', xl: '25px' }}
               mb={{ base: '35px' }}
             >
@@ -62,20 +62,12 @@ const Hero = () => {
               charging ecosystems.
             </Text>
 
-            <CustomButton
-              px="20px"
-              py="15px"
-              mt={{ lg: '10px' }}
-              borderRadius="50px"
-              btnText="Contact us"
-              bg="#000"
-              color="#fff"
-            />
+            <CustomButton btnText="Contact us" color="#fff" />
           </Flex>
 
-          <Box w={{ lg: '500px' }}>
+          {/* <Box w={{ lg: '500px' }}>
             <Image src={graphic1} marginLeft={{ lg: '76px' }} />
-          </Box>
+          </Box> */}
         </Grid>
       </Wrapper>
     </Box>

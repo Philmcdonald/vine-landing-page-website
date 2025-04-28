@@ -20,12 +20,7 @@ const EvCharge = () => {
               with exclusive pricing, win more RFPs, offload support, and make
               more money without reinventing your business.
             </CustomText>
-            <CustomButton
-              btnText={'See pricing'}
-              bg={'teal'}
-              borderRadius={'50px'}
-              color={'#fff'}
-            />
+          
           </Box>
           <Box>
             <Image src={evCharge} />

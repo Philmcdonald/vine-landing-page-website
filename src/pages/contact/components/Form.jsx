@@ -1,59 +1,32 @@
 import { Box, Flex, Grid } from '@chakra-ui/react'
 import Navigation from '../../../components/Nav'
-import FormInput from '../../../components/FormInput'
-import { CustomButton } from '../../../components/CustomButton'
-import { CustomText, SubHeading, Wrapper } from '../../../components'
+import {
+  CustomText,
+  ReusableForm,
+  SubHeading,
+  Wrapper,
+} from '../../../components'
 
 const Form = () => {
   return (
-    <Box bg={'#eee'} h={'fit-content'}>
+    <Box bg={'#f7f7f7'} h={'fit-content'}>
+      <Navigation />
       <Wrapper
         py={{
           base: '10px',
-          xl: '30px',
+          xl: '10px',
         }}
         pb={{
           base: '10px',
           xl: '100px',
         }}
       >
-        <Navigation />
         <Grid
           gridTemplateColumns={{ base: '1fr', xl: '1fr 1fr' }}
           mt={{ base: '30px', xl: '100px' }}
           gap={'50px'}
         >
-          <Box
-            bg={'#fff'}
-            p={'30px'}
-            borderRadius={'10px'}
-            boxShadow={'xl'}
-            flex={1}
-            zIndex={1}
-          >
-            <Flex align={'center'} gap={'10px'}>
-              <FormInput label={'FIRST NAME'} />
-              <FormInput label={'LAST NAME'} />
-            </Flex>
-            <Flex my={'20px'}>
-              <FormInput label={'BUSINESS EMAIL '} />
-            </Flex>
-            <Flex align={'center'} gap={'10px'}>
-              <FormInput label={'PHONE NUMBER'} />
-              <FormInput label={'COMPANY NAME'} />
-            </Flex>
-            <Flex my={'20px'}>
-              <FormInput label={'HOW CAN WE HELP YOU?'} lines={5} />
-            </Flex>
-            <Flex my={'30px'}>
-              <CustomButton
-                btnText={'submit'}
-                color={'#fff'}
-                bg={'blue.300'}
-                w={'full'}
-              />
-            </Flex>
-          </Box>
+          <ReusableForm />
           <Box flex={1}>
             <SubHeading>Contact our team</SubHeading>
             <CustomText my="20px">

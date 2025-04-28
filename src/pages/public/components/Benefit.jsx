@@ -13,7 +13,7 @@ const Benefit = () => {
     <Box bg={'#000'} justifyContent={'center'} h={'fit-content'}>
       <Wrapper>
         <Box maxW={'600px'} color={'#fff'}>
-          <InfoHeading color="blue.300">Key benefits</InfoHeading>
+          <InfoHeading>Key benefits</InfoHeading>
           <SubHeading py="20px">
             Support your community & attract the best kind of customers
           </SubHeading>

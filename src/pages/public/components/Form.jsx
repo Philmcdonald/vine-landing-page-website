@@ -1,57 +1,32 @@
-import { Box, Flex, Grid, Image, Text } from '@chakra-ui/react'
-import FormInput from '../../../components/FormInput'
+import { Box, Grid, Image, Text } from '@chakra-ui/react'
 import { CustomButton } from '../../../components/CustomButton'
 import o1 from '../../../assets/o1.svg'
 import o2 from '../../../assets/o2.svg'
 import o3 from '../../../assets/o3.svg'
 import o4 from '../../../assets/o4.svg'
 import pump from '../../../assets/pump.svg'
-import { CustomText, SubHeading, Wrapper } from '../../../components'
+import {
+  CustomText,
+  SubHeading,
+  Wrapper,
+  ReusableForm,
+} from '../../../components'
+import { Link } from 'react-router-dom'
 
 const Form = () => {
   return (
-    <Box bg={'#eee'} justifyContent={'center'} h={'fit-content'}>
+    <Box bg={'#f7f7f7'} justifyContent={'center'} h={'fit-content'}>
       <Wrapper>
         <Grid
           gridTemplateColumns={{ base: '', xl: '1fr 1fr' }}
           justify={'center'}
           gap={{ base: '50px', xl: '100px' }}
         >
-          <Box
-            bg={'#fff'}
-            p={'30px'}
-            borderRadius={'10px'}
-            border={'1px solid #eee'}
-            boxShadow={'lg'}
-            flex={1}
-          >
-            <Flex align={'center'} gap={'10px'}>
-              <FormInput label={'FIRST NAME'} />
-              <FormInput label={'LAST NAME'} />
-            </Flex>
-            <Flex my={'20px'}>
-              <FormInput label={'BUSINESS EMAIL '} />
-            </Flex>
-            <Flex align={'center'} gap={'10px'}>
-              <FormInput label={'PHONE NUMBER'} />
-              <FormInput label={'COMPANY NAME'} />
-            </Flex>
-            <Flex my={'20px'}>
-              <FormInput label={'HOW CAN WE HELP YOU?'} lines={5} />
-            </Flex>
-            <Flex my={'30px'}>
-              <CustomButton
-                btnText={'submit'}
-                color={'#fff'}
-                bg={'blue.300'}
-                w={'full'}
-              />
-            </Flex>
-          </Box>
+          <ReusableForm />
 
           <Box flex={1}>
             <SubHeading>
-              Find out more about public charging with ChargeLab
+              Find out more about public charging with Vine Mobility
             </SubHeading>
             <CustomText maxW={'400px'} py={{ base: '20px', xl: '30px' }}>
               Fill out the form to get in touch with one of our EV
@@ -63,75 +38,64 @@ const Form = () => {
               my="30px"
             >
               <Box>
-                <Image src={o1} h={'50px'} />
+                <Image src={o1} h={'40px'} />
                 <Text fontWeight={'bold'} py="10px">
                   EV charger management
                 </Text>
                 <Text fontWeight={'medium'}>
                   Connect & control any OCPP EV charger that has been approved
-                  by ChargeLab.
+                  by Vine Mobility.
                 </Text>
-                <CustomButton
-                  btnText={'Compatible hardware'}
-                  color={'blue.300'}
-                  fontWeight="bold"
-                  px={'0px'}
-                  fontSize={'18px'}
-                />
               </Box>
 
               <Box>
-                <Image src={o3} h={'50px'} />
+                <Image src={o3} h={'40px'} />
                 <Text fontWeight={'bold'} py="10px">
                   Collect Revenue
                 </Text>
                 <Text fontWeight={'medium'}>
                   Connect & control any OCPP EV charger that has been approved
-                  by ChargeLab.
+                  by Vine Mobility.
                 </Text>
               </Box>
 
               <Box>
-                <Image src={o2} h={'50px'} />
+                <Image src={o2} h={'40px'} />
                 <Text fontWeight={'bold'} py="10px">
                   Turnkey install services
                 </Text>
                 <Text fontWeight={'medium'}>
                   Hardware, software, and install services all in one place.
                 </Text>
-                <CustomButton
-                  btnText={'Learn more'}
-                  color={'blue.300'}
-                  fontWeight="bold"
-                  px={'0px'}
-                  fontSize={'18px'}
-                />
               </Box>
 
               <Box>
-                <Image src={o4} h={'50px'} />
+                <Image src={o4} h={'40px'} />
                 <Text fontWeight={'bold'} py="10px">
                   Be discovered
                 </Text>
                 <Text fontWeight={'medium'}>
-                  Hardware, software, and install services all in one place.
+                  Put your site on every major Ev changing map.
                 </Text>
-                <CustomButton
-                  btnText={'All software features'}
-                  color={'blue.300'}
-                  fontWeight="bold"
-                  px={'0px'}
-                  fontSize={'18px'}
-                />
+                <Link to={'/enterprise-software'}>
+                  <CustomButton
+                    btnText={'All software features'}
+                    bg={'transparent'}
+                    p={'0px'}
+                    color={'#8fc03f'}
+                  />
+                </Link>
               </Box>
             </Grid>
           </Box>
         </Grid>
-
-        <Flex justifyContent={'center'}>
-          <Image src={pump} h={'350px'} />
-        </Flex>
       </Wrapper>
+
+      <Box bg={'#000'} justifyContent={'center'}>
+        <Wrapper>
+          <Image mx={'auto'} src={pump} h={'350px'} />
+        </Wrapper>
+      </Box>
     </Box>
   )
 }

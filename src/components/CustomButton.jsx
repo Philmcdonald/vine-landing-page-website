@@ -1,6 +1,6 @@
 // import { Button } from "@chakra-ui/button"
 import { Button } from '@chakra-ui/react'
-// import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { IoIosArrowForward } from 'react-icons/io'
 
 // import React from "react"
@@ -21,25 +21,34 @@ export const CustomButton = ({
   btnText,
   fontSize,
   my,
+  mt,
+  type,
   ...props
 }) => {
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
+
+  const onClickHandler = () => {
+    if (type === 'submit') {
+      return navigate('/')
+    } else {
+      return navigate('/contact')
+    }
+  }
   return (
     <Button
       leftIcon={leftIcon}
       rightIcon={rightIcon || <IoIosArrowForward />}
-      fontSize={fontSize || '1.3rem'}
+      fontSize={fontSize || '1.2rem'}
       fontFamily={'Inter, sans-serif'}
-      py={py}
-      px={px}
-      bg={bg}
-      color={color}
+      py={py || '1.5rem'}
+      px={px || '20px'}
+      bg={bg || '#000'}
+      color={color || '#fff'}
       _hover={{ hover }}
-      // onClick={() => {
-      //   navigate('/pre-login')
-      // }}
-      borderRadius={borderRadius}
+      onClick={onClickHandler}
+      borderRadius={borderRadius || '50px'}
       border={border}
+      mt={mt || { lg: '10px' }}
       mr={mr}
       my={my}
       w={w}

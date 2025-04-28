@@ -9,43 +9,43 @@ import c8 from '../../../assets/c8.svg'
 
 export const features = [
   {
-    title: 'Pay after you charge',
+    title: 'Seamless Digital Wallet ',
     img: c1,
-    content: `No "wallet". No monthly membership. Pay for what you use, after you use it.`,
+    content: `Manage your charging funds in one secure place with easy top-up options tailored for Nigerian payment methods. Start charging with just a few taps.`,
   },
   {
-    title: 'Simple, private account',
+    title: 'Simple, private accounts',
     img: c2,
-    content: ` We don't need to know your date of birth and 3rd favorite color. We're just here to help you charge.`,
+    content: `We don't need to know your date of birth and 3rd favorite color. We're just here to help you charge.`,
   },
   {
     title: 'Find places to charge',
     img: c3,
-    content: `Locate chargers from any ChargeLab-powered network. Third-party network support coming soon.`,
+    content: `Easily locate available charging points across our growing network throughout Nigeria and beyond.`,
   },
   {
-    title: 'Join a charging community',
+    title: 'Track your usage ',
     img: c4,
-    content: `Access private charging at your workplace or multi-family building.`,
+    content: `Access your charging history, review transaction details, and track your energy consumption patterns all in one place.`,
   },
-  {
-    title: 'Track your usage',
-    img: c5,
-    content: `Consolidated transaction history including sessions started from our mobile app, web app, or using an RFID card.`,
-  },
-  {
-    title: 'Link your RFID card',
-    img: c6,
-    content: `Connect all of your authentication methods in one place, including any ChargeLab-powered network card.`,
-  },
+  // {
+  //   title: 'Set notifications ',
+  //   img: c5,
+  //   content: `Receive timely notifications about your charging sessions, wallet updates, and special offers via SMS and email.`,
+  // },
+  // {
+  //   title: 'Link your RFID card',
+  //   img: c6,
+  //   content: `Connect all of your authentication methods in one place, including any ChargeLab-powered network card.`,
+  // },
   {
     title: 'Set notifications',
     img: c7,
-    content: ` Get SMS & email notifications after every charge, plus automated receipts.`,
+    content: `Receive timely notifications about your charging sessions, wallet updates, and special offers via SMS and email.`,
   },
   {
-    title: 'Get help, 24/7',
+    title: 'Dedicated Support ',
     img: c8,
-    content: `Access a human customer service agent through our toll-free number.`,
+    content: `Our customer service team is ready to assist you with any questions or concerns through our responsive support channels.`,
   },
 ]

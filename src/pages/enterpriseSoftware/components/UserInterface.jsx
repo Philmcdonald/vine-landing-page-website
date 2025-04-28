@@ -1,10 +1,10 @@
 import { Box, Grid, Image, Text } from '@chakra-ui/react'
 
 import u3 from '../../../assets/u3.svg'
-import u4 from '../../../assets/u4.svg'
 import { CustomButton } from '../../../components/CustomButton'
 import { CustomText, Wrapper } from '../../../components'
 import { userInterface } from '../data'
+import { Link } from 'react-router-dom'
 
 const UserInterface = () => {
   return (
@@ -21,7 +21,7 @@ const UserInterface = () => {
         </Box>
 
         <Grid
-          templateColumns={{ base: '1fr', xl: 'repeat(4, 1fr)' }}
+          templateColumns={{ base: '1fr', xl: 'repeat(3, 1fr)' }}
           gap={10}
           my="50px"
         >
@@ -61,15 +61,17 @@ const UserInterface = () => {
             <Text fontSize={{ base: '14px', md: '14px' }}>
               Drive brand loyalty with a mobile application.
             </Text>
-            <CustomButton
-              btnText={'Get the ChargeLab app'}
-              color={'blue.300'}
-              bg={'none'}
-              px={'0px'}
-            />
+            <Link to={'/vine-volts-app'}>
+              <CustomButton
+                btnText={'Get the ChargeLab app'}
+                color={'#8fc03f'}
+                bg={'none'}
+                px={'0px'}
+              />
+            </Link>
           </Box>
 
-          <Box color={'#000'}>
+          {/* <Box color={'#000'}>
             <Image
               src={u4}
               h={{ base: '38px', md: '40px' }}
@@ -87,11 +89,11 @@ const UserInterface = () => {
             </Text>
             <CustomButton
               btnText={'View network cards'}
-              color={'blue.300'}
+              color={'#8fc03f'}
               bg={'none'}
               px={'0px'}
             />
-          </Box>
+          </Box> */}
         </Grid>
       </Wrapper>
     </Box>

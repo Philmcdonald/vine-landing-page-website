@@ -10,19 +10,16 @@ import {
 
 const Features = () => {
   return (
-    <Box bg={'#fff'} justifyContent={'center'} h={'fit-content'}>
+    <Box bg={'#000'} justifyContent={'center'} h={'fit-content'}>
       <Wrapper>
         <Box maxW={'1000px'}>
-          <InfoHeading color={'blue.300'} fontWeight={'bold'} fontSize={'25px'}>
+          <InfoHeading fontWeight={'bold'} fontSize={'25px'}>
             Features
           </InfoHeading>
-          <SubHeading py="20px">
-            Enjoy Hassle-Free EV Charging Experience-{' '}
-            <span style={{}}>
-              VineVolt app is built by EV drivers, for EV drivers.{' '}
-            </span>
+          <SubHeading color={'#fff'} py="20px">
+            Enjoy Hassle Free EV Charging Experience
           </SubHeading>
-          <CustomText>
+          <CustomText color={'#fff'}>
             VineVolt&apos;s app is built by EV drivers, for EV drivers.
           </CustomText>
         </Box>
@@ -34,7 +31,7 @@ const Features = () => {
         >
           {features.map(({ title, content, img }) => {
             return (
-              <Box color={'#000'} key={title}>
+              <Box color={'#fff'} key={title}>
                 <Image
                   src={img}
                   h={{ base: '38px', md: '40px' }}

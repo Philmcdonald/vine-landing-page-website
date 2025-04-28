@@ -21,7 +21,7 @@ export const Benefits = [
   },
   {
     img: b4,
-    title: 'Achieve sustainability goals',
-    content: `Earn LEED points and other green building certifications. Comply with any local EV regulation.`,
+    title: 'Support Your Sustainability Goals',
+    content: `Show your commitment to a greener Nigeria. With Vine Mobility, you're not just installing chargers, you’re building a cleaner future and staying ready for evolving EV policies.`,
   },
 ]

@@ -7,7 +7,7 @@ import { SubHeading, Wrapper } from '../../../components'
 
 const Industry = () => {
   return (
-    <Box bg={'#eee'} h={'fit-content'}>
+    <Box bg={'#f7f7f7'} h={'fit-content'}>
       <Wrapper>
         <Box>
           <SubHeading textAlign={{ base: 'center' }}>

@@ -8,7 +8,7 @@ const Developers = () => {
   return (
     <Box
       p={['20px 30px', '20px 30px', '20px 30px', '20px 150px']}
-      //   bg={"#eee"}
+      //   bg={"#f7f7f7"}
       justifyContent={'center'}
       bg={'#2a4352'}
       // h={"100vh"}
@@ -21,9 +21,15 @@ const Developers = () => {
           <Text fontSize={'50px'} color={'#fff'} fontWeight={'bold'}>
             Built for developers
           </Text>
-          <Text fontSize={'18px'} color={'#eee'} fontWeight={'medium'} py="20px">
-            ChargeLab's front-end is designed to delight EV drivers and building managers. Our
-            back-end is built for third-party developers to extend.
+          <Text
+            fontSize={'18px'}
+            color={'#f7f7f7'}
+            fontWeight={'medium'}
+            py="20px"
+          >
+            ChargeLab's front-end is designed to delight EV drivers and building
+            managers. Our back-end is built for third-party developers to
+            extend.
           </Text>
         </Box>
 

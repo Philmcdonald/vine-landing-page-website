@@ -1,5 +1,4 @@
 import { Box, Grid, Image, Text } from '@chakra-ui/react'
-import React from 'react'
 import i1 from '../../../assets/i1.svg'
 import i2 from '../../../assets/i2.svg'
 import i3 from '../../../assets/i3.svg'
@@ -10,7 +9,7 @@ const Integration = () => {
   return (
     <Box
       p={['20px 30px', '20px 30px', '20px 30px', '20px 150px']}
-      bg={'#eee'}
+      bg={'#f7f7f7'}
       justifyContent={'center'}
       // h={"100vh"}
     >
@@ -64,7 +63,7 @@ const Integration = () => {
           </Text>
           <CustomButton
             btnText={'Learn more'}
-            color={'blue.300'}
+            color={'#8fc03f'}
             bg={'none'}
             px={'0px'}
           />

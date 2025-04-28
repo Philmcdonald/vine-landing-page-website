@@ -7,7 +7,8 @@ import { CustomText, MainHeading } from '../../../components'
 
 const Hero = () => {
   return (
-    <Box bg={'#eee'} justifyContent={'center'} h={'fit-content'}>
+    <Box bg={'#f7f7f7'} justifyContent={'center'} h={'fit-content'}>
+      <Navigation />
       <Wrapper
         py={{
           base: '10px',
@@ -18,7 +19,6 @@ const Hero = () => {
           xl: '100px',
         }}
       >
-        <Navigation />
         <Grid
           mt={{ base: '45px', xl: '50px' }}
           gap={{ base: '40px', xl: '50px' }}
@@ -33,19 +33,7 @@ const Hero = () => {
               workplace charging at your office building.
             </CustomText>
             <Flex align={'center'} gap={'30px'}>
-              <CustomButton
-                btnText={'Contact us'}
-                bg={'blue.300'}
-                color={'#fff'}
-                fontSize={'20px'}
-                borderRadius={'50px'}
-              />
-              <CustomButton
-                btnText={'see pricing'}
-                bg={'none'}
-                fontSize={'20px'}
-                color={'blue.300'}
-              />
+              <CustomButton btnText={'Contact us'} bg={'#8fc03f'} />
             </Flex>
           </Box>
           <Box>

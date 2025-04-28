@@ -1,25 +1,27 @@
-import { Box, Flex, Image, Text } from '@chakra-ui/react'
+import { Box, Flex, Image } from '@chakra-ui/react'
 import Navigation from '../../../components/Nav'
 import { CustomButton } from '../../../components/CustomButton'
-import enterprise1 from '../../../assets/enterprise1.webp'
-import enterprise2 from '../../../assets/enterprise2.webp'
+// import enterprise1 from '../../../assets/enterprise1.webp'
+// import enterprise2 from '../../../assets/enterprise2.webp'
+import vineCharge from '../../../assets/vineCharge.png'
 import logoB from '../../../assets/logoB.png'
 import CustomText from '../../../components/CustomText'
 import { Wrapper, MainHeading } from '../../../components'
 
 const Hero = () => {
   return (
-    <Box bg={'#eee'} justifyContent={'center'} h={'100vh'}>
+    <Box bg={'#f7f7f7'} justifyContent={'center'}>
+      <Navigation color={'#000'} logo={logoB} />
       <Wrapper
         py={{
           base: '10px',
-          xl: '30px',
+          xl: '40px',
         }}
       >
-        <Navigation color={'#000'} logo={logoB} />
         <Flex
           flexDirection={{ base: 'column', xl: 'row' }}
-          mt={{ base: '50px', xl: '60px' }}
+          mt={{ base: '50px', xl: '40px' }}
+          mb={{ base: '20px', xl: '30px' }}
           align={'center'}
           position={'relative'}
         >
@@ -34,26 +36,26 @@ const Hero = () => {
               use, powerful to deploy.
             </CustomText>
             <Box mt="30px">
-              <CustomButton btnText={'Contact Us'} bg={'teal'} color={'#fff'} />
+              <CustomButton btnText="Contact us" />
             </Box>
           </Box>
 
           <Box mt={{ base: '40px', xl: '-30px' }}>
             <Box>
               <Image
-                src={enterprise1}
+                src={vineCharge}
                 w={{ base: '100%', xl: '70rem' }}
                 h="auto"
               />
             </Box>
-            <Box
+            {/* <Box
               display={{ base: 'none', xl: 'block' }}
               position={{ base: 'relative', xl: 'absolute' }}
               top={{ base: '', xl: 250 }}
               right={{ base: '', xl: '20px' }}
             >
               <Image src={enterprise2} h={'500px'} w="auto" />
-            </Box>
+            </Box> */}
           </Box>
         </Flex>
       </Wrapper>

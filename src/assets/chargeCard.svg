@@ -51,9 +51,9 @@
 </filter>
 <linearGradient id="paint0_linear_2975_6657" x1="232" y1="378.583" x2="423.85" y2="75.0756" gradientUnits="userSpaceOnUse">
 <stop stop-color="#18A0D7"/>
-<stop offset="0.243949" stop-color="#00BADB"/>
+<stop offset="0.243949" stop-color="#8fc03f"/>
 <stop offset="0.500316" stop-color="#00D1CA"/>
-<stop offset="0.761899" stop-color="#4EE4AB"/>
+<stop offset="0.761899" stop-color="#8fc03f"/>
 <stop offset="1" stop-color="#A7F288"/>
 </linearGradient>
 <radialGradient id="paint1_radial_2975_6657" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(334.568 126.406) rotate(90) scale(126.169 125.998)">

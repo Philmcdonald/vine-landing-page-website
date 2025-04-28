@@ -5,7 +5,7 @@ import { card } from '../../../data/landing-page.data'
 
 const Service = () => {
   return (
-    <Box bg={'#FFF'} mt={{ base: '-0.5', xl: '-70px' }}>
+    <Box bg={'#f7f7f7'} mt={{ base: '-0.5', xl: '' }}>
       <Wrapper
         py={{
           base: '45px',
@@ -21,12 +21,12 @@ const Service = () => {
           {card.map(({ title, content }) => {
             return (
               <Box
-                bg={{ base: 'none', md: '#eee' }}
+                bg={{ base: 'none', md: '#f7f7f7' }}
                 borderRadius={{ base: '0px', md: '10px' }}
                 p={{ base: '0px', md: '20px' }}
                 flex={1}
                 textAlign={{ base: 'left' }}
-                maxW={{ base: '100%', xl: '30%' }}
+                maxW={{ base: '100%', xl: '' }}
                 key={title}
               >
                 <Text fontSize="25px" fontWeight={'bold'} py={'10px'}>

@@ -8,7 +8,7 @@ import { SubHeading, Wrapper } from '../../../components'
 
 const Partners = () => {
   return (
-    <Box bg={'#eee'} justifyContent={'center'} h={'fit-content'}>
+    <Box bg={'#f7f7f7'} justifyContent={'center'} h={'fit-content'}>
       <Wrapper>
         <Box>
           <SubHeading textAlign={'center'}>
@@ -81,7 +81,7 @@ const Partners = () => {
           <Flex justify={'center'} my="50px">
             <CustomButton
               btnText={'Get started'}
-              bg={'blue.300'}
+              bg={'#8fc03f'}
               borderRadius={'50px'}
               px={'20px'}
             />

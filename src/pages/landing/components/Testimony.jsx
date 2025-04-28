@@ -6,10 +6,12 @@ import { SubHeading } from '../../../components'
 
 const Testimony = () => {
   return (
-    <Box bg={'#eee'}>
+    <Box bg={'#f7f7f7'}>
       <Wrapper>
-        <Box px={{ base: '0px', md: '50px' }}>
-          <SubHeading textAlign={'center'}>What Our Partners Say</SubHeading>
+        <Box mt={'-20px'} px={{ base: '0px', md: '50px' }}>
+          <SubHeading textColor={'#8fc03f'} textAlign={'center'}>
+            What Our Partners Say
+          </SubHeading>
 
           <Text
             textAlign={'center'}
@@ -36,6 +38,7 @@ const Testimony = () => {
             {testimony.map(({ name, title, content }) => {
               return (
                 <Box
+                  boxShadow={'lg'}
                   key={title}
                   bg={'#fff'}
                   borderRadius={'10px'}
@@ -51,7 +54,9 @@ const Testimony = () => {
                     {name}
                   </Text>
                   <Text fontWeight={'medium'}>{title}</Text>
-                  <CustomText pt="20px">{content}</CustomText>
+                  <CustomText fontSize={{ base: '16px' }} pt="20px">
+                    {content}
+                  </CustomText>
                 </Box>
               )
             })}

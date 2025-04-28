@@ -10,12 +10,14 @@ import {
 
 const Features = () => {
   return (
-    <Box bg={'#eee'} justifyContent={'center'}>
+    <Box bg={'#000'} justifyContent={'center'}>
       <Wrapper>
         <Box maxW={'600px'}>
-          <InfoHeading color={'blue.300'}>Features</InfoHeading>
-          <SubHeading>Everything you want in a CSMS, and more</SubHeading>
-          <CustomText py="20px">
+          <InfoHeading>Features</InfoHeading>
+          <SubHeading color={'#fff'}>
+            Everything you want in a CSMS, and more
+          </SubHeading>
+          <CustomText color={'#fff'} py="20px">
             VineCharge is more than just software. It’s your all-in-one control
             center for managing EV chargers, tracking performance, and powering
             a seamless charging experience across multiple locations.
@@ -28,7 +30,7 @@ const Features = () => {
         >
           {features.map(({ title, img, content }) => {
             return (
-              <Box color={'#000'} key={title}>
+              <Box color={'#fff'} key={title}>
                 <Image
                   src={img}
                   h={{ base: '38px', md: '40px' }}

@@ -1,53 +1,21 @@
-import { Box, Flex, Grid, Image, Text } from '@chakra-ui/react'
-import FormInput from '../../../components/FormInput'
+import { Box, Grid, Image, Text } from '@chakra-ui/react'
 import { CustomButton } from '../../../components/CustomButton'
 import o1 from '../../../assets/o1.svg'
 import o2 from '../../../assets/o2.svg'
 import o3 from '../../../assets/o3.svg'
-import o4 from '../../../assets/o4.svg'
 import Wrapper from '../../../components/Wrapper'
-import { CustomText, SubHeading } from '../../../components'
+import { CustomText, ReusableForm, SubHeading } from '../../../components'
 
 const Form = () => {
   return (
-    <Box bg={'#eee'} justifyContent={'center'} h={'fit-content'}>
+    <Box bg={'#f7f7f7'} justifyContent={'center'} h={'fit-content'}>
       <Wrapper>
         <Grid
           gridTemplateColumns={{ base: '1fr', xl: '1fr 1fr' }}
           justify={'center'}
           gap={{ base: '50px', xl: '100px' }}
         >
-          <Box
-            bg={'#fff'}
-            p={'30px'}
-            borderRadius={'10px'}
-            border={'1px solid #eee'}
-            boxShadow={'lg'}
-            flex={1}
-          >
-            <Flex align={'center'} gap={'10px'}>
-              <FormInput label={'FIRST NAME'} />
-              <FormInput label={'LAST NAME'} />
-            </Flex>
-            <Flex my={'20px'}>
-              <FormInput label={'BUSINESS EMAIL '} />
-            </Flex>
-            <Flex align={'center'} gap={'10px'}>
-              <FormInput label={'PHONE NUMBER'} />
-              <FormInput label={'COMPANY NAME'} />
-            </Flex>
-            <Flex my={'20px'}>
-              <FormInput label={'HOW CAN WE HELP YOU?'} lines={5} />
-            </Flex>
-            <Flex my={'30px'}>
-              <CustomButton
-                btnText={'submit'}
-                color={'#fff'}
-                bg={'blue.300'}
-                w={'full'}
-              />
-            </Flex>
-          </Box>
+          <ReusableForm />
 
           <Box flex={1}>
             <SubHeading fontSize={'30px'} fontWeight={'bold'}>
@@ -64,7 +32,7 @@ const Form = () => {
               my="30px"
             >
               <Box>
-                <Image src={o1} h={'50px'} />
+                <Image src={o1} h={'40px'} />
                 <Text fontWeight={'bold'} py="10px">
                   EV charger management
                 </Text>
@@ -74,7 +42,8 @@ const Form = () => {
                 </Text>
                 <CustomButton
                   btnText={'Compatible hardware'}
-                  color={'blue.300'}
+                  bg={'none'}
+                  color={'#8fc03f'}
                   fontWeight="bold"
                   px={'0px'}
                   fontSize={'18px'}
@@ -82,7 +51,7 @@ const Form = () => {
               </Box>
 
               <Box>
-                <Image src={o2} h={'50px'} />
+                <Image src={o2} h={'40px'} />
                 <Text fontWeight={'bold'} py="10px">
                   Turnkey install services
                 </Text>
@@ -91,7 +60,8 @@ const Form = () => {
                 </Text>
                 <CustomButton
                   btnText={'Learn more'}
-                  color={'blue.300'}
+                  color={'#8fc03f'}
+                  bg={'none'}
                   fontWeight="bold"
                   px={'0px'}
                   fontSize={'18px'}
@@ -99,30 +69,13 @@ const Form = () => {
               </Box>
 
               <Box>
-                <Image src={o3} h={'50px'} />
+                <Image src={o3} h={'40px'} />
                 <Text fontWeight={'bold'} py="10px">
                   Collect Revenue
                 </Text>
                 <Text fontWeight={'medium'}>
                   Set end-user fees and accept any major credit card.
                 </Text>
-              </Box>
-
-              <Box>
-                <Image src={o4} h={'50px'} />
-                <Text fontWeight={'bold'} py="10px">
-                  Manage power
-                </Text>
-                <Text fontWeight={'medium'}>
-                  Advanced energy management & active load balancing.
-                </Text>
-                <CustomButton
-                  btnText={'All software features'}
-                  color={'blue.300'}
-                  fontWeight="bold"
-                  px={'0px'}
-                  fontSize={'18px'}
-                />
               </Box>
             </Grid>
           </Box>

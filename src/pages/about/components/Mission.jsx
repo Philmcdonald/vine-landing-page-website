@@ -7,34 +7,32 @@ const Mission = () => {
       <Wrapper>
         <SubHeading>Our mission</SubHeading>
         <CustomText my="30px" maxW={'900px'}>
-          In the next 20 years, EVs will replace ICE vehicles as the main way
-          that people move around. We are living through a revolution in not
-          only how we move, but how we store and use energy. 25% of all end-use
-          global energy is spent on transportation (37% in North America).
-          Switching from gas to electric fuel for transportation will require
-          the largest global infrastructure overhaul of our lives—from new
-          renewable power generation, to how we transmit, distribute, store, and
-          use electricity.
+          Africa’s mobility future is electric and at Vine Mobility, we’re
+          building the software backbone to power that future. Transportation
+          accounts for a significant share of global emissions, and in Africa,
+          growing urbanization means mobility demand is rising fast. We believe
+          the shift to electric vehicles (EVs) represents more than just a new
+          way to move, it&apos;s a new way to think about energy, infrastructure, and
+          sustainability.
         </CustomText>
         <CustomText maxW={'900px'}>
-          ChargeLab’s mission is to build EV charging solutions that scale. This
-          means making EV charger deployment fast and affordable. And making
-          charging easy and reliable for every EV driver.
+          Vine Mobility’s mission is to make EV charging simple, smart, and
+          scalable. Our platform helps businesses, property managers, and fleet
+          operators deploy and manage EV charging stations without needing to be
+          tech experts. From QR-enabled user access to real-time monitoring and
+          flexible pricing, we handle the complexity so you can focus on growth.
         </CustomText>
         <CustomText my="30px" maxW={'900px'}>
-          ChargeLab sits at the nexus point between vehicles, building owners,
-          and the grid. With software, we can help buildings, communities, and
-          entire cities charge more EVs than their infrastructure would
-          otherwise allow. We can optimize charging for grid capacity, cost, or
-          carbon impact. And we can enable bi-directional communication between
-          individual EVs and the grid.
+          We don’t build chargers, we build the systems that make chargers work
+          better. That means tools for uptime, usage tracking, revenue
+          generation, and smart energy management tailored to the unique
+          challenges of African cities from power reliability to grid
+          limitations.
         </CustomText>
         <CustomText fontSize={'18px'} maxW={'900px'}>
-          ChargeLab is building for scale because our planet needs millions more
-          EVs, and consumers want millions more EVs. Automobiles have been
-          powered by petrol since 1892. The switch to electric vehicles is a
-          once-per-century economic and cultural shift. We are pioneers for the
-          new era of transportation and energy.
+          The switch to EVs is one of the most transformative shifts of our
+          generation. At Vine Mobility, we’re not waiting for it to happen,
+          we’re building the software to drive it.
         </CustomText>
       </Wrapper>
     </Box>

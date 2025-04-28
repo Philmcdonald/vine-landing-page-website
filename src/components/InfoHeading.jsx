@@ -5,7 +5,7 @@ const InfoHeading = ({ children, ...props }) => {
     <Text
       fontSize={{ base: '22px' }}
       fontWeight={{ base: 'bold' }}
-      color={'green.300'}
+      color={'#8fc03f'}
       {...props}
     >
       {children}

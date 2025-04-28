@@ -16,7 +16,7 @@ const Form = () => {
             bg={'#fff'}
             p={'30px'}
             borderRadius={'10px'}
-            border={'1px solid #eee'}
+            border={'1px solid #f7f7f7'}
             boxShadow={'lg'}
           >
             <Flex align={'center'} gap={'10px'}>
@@ -37,7 +37,7 @@ const Form = () => {
               <CustomButton
                 btnText={'submit'}
                 color={'#fff'}
-                bg={'blue.300'}
+                bg={'#8fc03f'}
                 w={'full'}
               />
             </Flex>

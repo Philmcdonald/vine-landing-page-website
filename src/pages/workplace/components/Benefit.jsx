@@ -8,7 +8,7 @@ const Benefit = () => {
     <Box bg={'#000'} justifyContent={'center'} h={'fit-content'}>
       <Wrapper>
         <Box maxW={'600px'} color={'#fff'}>
-          <InfoHeading color="blue.300">Key benefits</InfoHeading>
+          <InfoHeading>Key benefits</InfoHeading>
           <SubHeading py="20px">Help power the future</SubHeading>
           <CustomText fontWeight={'medium'} fontSize={'20px'}>
             Depending on your location, workplace charging is quickly turning

@@ -6,20 +6,19 @@ import { SubHeading, InfoHeading, Wrapper } from '../../../components'
 const HowItWorks = () => {
   return (
     <Box
-      // bg={"#eee"}
+      // bg={"#f7f7f7"}
       justifyContent={'center'}
       // h={"100vh"}
     >
       <Wrapper>
-        <Box maxW={'600px'}>
+        <Box maxW={'500px'}>
           <InfoHeading>How it works</InfoHeading>
           <SubHeading>Connect Any OCPP-Compliant Charger</SubHeading>
           <CustomText py="20px">
             The VineCharge platform is built to work seamlessly with all
             OCPP-compatible chargers. Our system is flexible, future-proof, and
-            hardware-neutral.
-            <br /> Select an EV charger manufacturer below to see how VineCharge
-            platform works.
+            hardware-neutral. Select an EV charger manufacturer below to see how
+            VineCharge platform works.
           </CustomText>
         </Box>
       </Wrapper>

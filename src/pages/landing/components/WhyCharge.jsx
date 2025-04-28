@@ -1,10 +1,11 @@
-import { Box, Flex, Image, Grid } from '@chakra-ui/react'
-import chargeMobile from '../../../assets/chargeMobile.webp'
-import chargeDashboard from '../../../assets/chargeDashboard.webp'
+import { Box, Image, Grid } from '@chakra-ui/react'
+import chargeMobile from '../../../assets/mobile.png'
+import chargeDashboard from '../../../assets/VineCharge.png'
 import Wrapper from '../../../components/Wrapper'
 import CustomText from '../../../components/CustomText'
 import SubHeading from '../../../components/SubHeading'
 import InfoHeading from '../../../components/InfoHeading'
+import { Link } from 'react-router-dom'
 
 const WhyCharge = () => {
   return (
@@ -32,9 +33,11 @@ const WhyCharge = () => {
                 managers, charging network operators, EV infrastructure
                 developers, Energy companies, oil and gas companies, malls,
                 recreational centers and so on. Our{' '}
-                <span style={{ fontWeight: 'bolder' }}>
-                  Enterprise Software{' '}
-                </span>
+                <Link to={'/enterprise-software'}>
+                  <span style={{ fontWeight: 'bolder' }}>
+                    Enterprise Software{' '}
+                  </span>
+                </Link>
                 provides everything needed to deploy, manage, and scale
                 intelligent charging solutions.
               </CustomText>
@@ -61,10 +64,10 @@ const WhyCharge = () => {
           </Box>
         </Box>
       </Wrapper>
-      <Flex
+      <Grid
         mx="auto"
-        width={{ base: '85%' }}
-        flexDir={{ base: 'column', md: 'row' }}
+        width={{ base: '90%' }}
+        gridTemplateColumns={{ base: '1fr', xl: '1fr 70%' }}
         pb={{ base: '30px', xl: '50px' }}
       >
         <Box>
@@ -74,7 +77,7 @@ const WhyCharge = () => {
         <Box>
           <Image src={chargeDashboard} />
         </Box>
-      </Flex>
+      </Grid>
     </Box>
   )
 }

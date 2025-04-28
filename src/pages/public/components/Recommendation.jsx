@@ -15,14 +15,13 @@ const Recommendation = () => {
     <Box bg={'#fff'} justifyContent={'center'} h={'fit-content'}>
       <Wrapper>
         <Box maxW={'600px'}>
-          <InfoHeading color="blue.300">Recommended hardware</InfoHeading>
+          <InfoHeading>Recommended hardware</InfoHeading>
           <SubHeading py={{ base: '15px', xl: '20px' }}>
             The best EV chargers for public sites
           </SubHeading>
           <CustomText>
-            vinecharge&apos;s platform works with any OCPP-compliant EV charger.
-            Below are our top recommendations for public EV chargers. You can
-            sort by charger type.
+            VineCharge works seamlessly with any OCPP-compliant charger. Here
+            are some of the top public EV chargers we support.
           </CustomText>
         </Box>
 

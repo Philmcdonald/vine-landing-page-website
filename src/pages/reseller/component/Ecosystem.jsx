@@ -46,7 +46,7 @@ const Ecosystem = () => {
         <Flex justify={'center'} my="50px">
           <CustomButton
             btnText={'Get started'}
-            bg={'blue.300'}
+            bg={'#8fc03f'}
             borderRadius={'50px'}
             px={'20px'}
           />

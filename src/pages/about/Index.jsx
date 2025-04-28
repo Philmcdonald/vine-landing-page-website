@@ -2,7 +2,7 @@ import { Box } from '@chakra-ui/react'
 import Hero from './components/Hero'
 import Mission from './components/Mission'
 import Backdrop from './components/Backdrop'
-import Mail from './components/Mail'
+// import Mail from './components/Mail'
 
 const Index = () => {
   return (
@@ -10,7 +10,7 @@ const Index = () => {
       <Hero />
       <Mission />
       <Backdrop />
-      <Mail />
+      {/* <Mail /> */}
     </Box>
   )
 }

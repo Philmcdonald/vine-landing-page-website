@@ -6,7 +6,7 @@ import { CustomText, SubHeading, Wrapper } from '../../../components'
 
 const Build = () => {
   return (
-    <Box bg={'#eee'} justifyContent={'center'} h={'fit-content'}>
+    <Box bg={'#f7f7f7'} justifyContent={'center'} h={'fit-content'}>
       <Wrapper>
         <Flex
           flexDirection={{ base: 'column', xl: 'row' }}
@@ -21,7 +21,7 @@ const Build = () => {
             </CustomText>
             <CustomButton
               btnText={'Contact us'}
-              bg={'blue.300'}
+              bg={'#8fc03f'}
               borderRadius={'50px'}
             />
           </Box>
@@ -38,7 +38,7 @@ const Build = () => {
             <CustomButton
               btnText={'Learn more'}
               bg={'none'}
-              color={'blue.300'}
+              color={'#8fc03f'}
               px={'0px'}
             />
           </Box>
@@ -55,7 +55,7 @@ const Build = () => {
             <CustomButton
               btnText={'Contact us'}
               bg={'none'}
-              color={'blue.300'}
+              color={'#8fc03f'}
               px={'0px'}
             />
           </Box>

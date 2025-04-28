@@ -9,7 +9,7 @@ import { platform } from '../../../data/landing-page.data'
 
 const Platform = () => {
   return (
-    <Box bg={'#2a4352'}>
+    <Box bg={'#000'}>
       <Wrapper>
         <Grid templateColumns={{ base: '1fr', md: '57% 1fr' }} gap={'50px'}>
           <Box color={'white'}>

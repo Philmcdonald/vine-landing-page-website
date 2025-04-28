@@ -8,10 +8,8 @@ export const card = [
   {
     title: 'Solutions providers',
     content: [
-      'If your sell or install EV Chargers, operate a charging network or manage a large fleet, learn about our ',
-      { text: 'enterprise software', style: { color: 'blue' } },
-      ' and ',
-      { text: 'white-label solutions', style: { color: 'blue' } },
+      ' Whether you sell or install EV chargers, manage fleets, or run a charging network, Vine Mobility gives you the tools to scale with ease. Explore our ',
+      { text: 'enterprise software', style: { color: '#8fc03f' } },
     ],
   },
   // {
@@ -26,10 +24,7 @@ export const card = [
   {
     title: 'EV drivers',
     content: [
-      'If your sell or install EV Chargers, operate a charging network or manage a large fleet, learn about our ',
-      { text: 'enterprise software', style: { color: 'blue' } },
-      ' and ',
-      { text: 'white-label solutions', style: { color: 'blue' } },
+      'Download the VineCharge app to find chargers, scan to start a session, and pay seamlessly, all from your phone.',
     ],
   },
 ]
@@ -45,7 +40,7 @@ export const platform = [
     src: motor,
     title: 'Open & interoperable',
     content:
-      "Vine Mobility has verified 30+ OCPP chargers from over a dozen  manufacturers. We're compatible with any OCPP hardware.",
+      "Vine Mobility has verified 15+ OCPP chargers from over a dozen  manufacturers. We're compatible with any OCPP hardware.",
   },
   {
     src: tablet,
