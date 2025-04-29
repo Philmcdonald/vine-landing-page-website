@@ -6,7 +6,7 @@ const Mission = () => {
     <Box bg={'#fff'} justifyContent={'center'} h={'fit-content'}>
       <Wrapper>
         <SubHeading>Our mission</SubHeading>
-        <CustomText my="30px" maxW={'900px'}>
+        <CustomText my={{ base: '15px', xl: '30px' }} maxW={'900px'}>
           Africa’s mobility future is electric and at Vine Mobility, we’re
           building the software backbone to power that future. Transportation
           accounts for a significant share of global emissions, and in Africa,

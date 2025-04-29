@@ -23,7 +23,7 @@ export const features = [
     img: f1,
     title: 'Fast & Easy Deployment',
     content:
-      'Connect and activate your EV chargers fast. Our user-friendly tools vmake it easy to get started.',
+      'Connect and activate your EV chargers fast. Our user-friendly tools make it easy to get started.',
   },
   {
     img: f2,
@@ -82,7 +82,7 @@ export const features = [
   {
     img: f11,
     title: 'Security',
-    content: 'VineCharge is built with enterprise-level security in mind.{" "}',
+    content: 'VineCharge is built with enterprise-level security in mind.',
   },
   {
     img: f13,

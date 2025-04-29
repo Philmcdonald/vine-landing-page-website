@@ -1,16 +1,16 @@
-import { Box, Flex, Grid } from '@chakra-ui/react'
+import { Box, Flex, Grid, Image } from '@chakra-ui/react'
 import { Text } from '../../../components'
 import Navigation from '../../../components/Nav'
 import { CustomButton } from '../../../components/CustomButton'
 import Wrapper from '../../../components/Wrapper'
 import MainHeading from '../../../components/MainHeader'
-// import graphic1 from '../../../assets/graphic1.svg'
+import graphic1 from '../../../assets/graphic1.svg'
 import logoB from '../../../assets/logoB.png'
 
 const Hero = () => {
   return (
     <Box
-      bgGradient="linear(to-r,  #8fc03f, #8fc03f)"
+      bgGradient="linear(to-r,  #3eaa39, #8fc03f)"
       height={'fit-content'}
       clipPath={{
         base: '',
@@ -65,9 +65,9 @@ const Hero = () => {
             <CustomButton btnText="Contact us" color="#fff" />
           </Flex>
 
-          {/* <Box w={{ lg: '500px' }}>
+          <Box w={{ lg: '500px' }}>
             <Image src={graphic1} marginLeft={{ lg: '76px' }} />
-          </Box> */}
+          </Box>
         </Grid>
       </Wrapper>
     </Box>

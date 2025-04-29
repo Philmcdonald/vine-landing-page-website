@@ -24,7 +24,7 @@ const Footer = () => {
               <LiaLinkedin size={25} />
               <BsInstagram size={25} />
             </Flex>
-            <Text>© Vine Mobility Inc.</Text>
+            <Text>© Vine Mobility Ltd.</Text>
           </Box>
 
           <Box>

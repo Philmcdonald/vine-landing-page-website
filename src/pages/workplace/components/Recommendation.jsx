@@ -12,7 +12,9 @@ const Recommendation = () => {
       <Wrapper>
         <Box maxW={'600px'}>
           <InfoHeading>Recommended hardware</InfoHeading>
-          <SubHeading>Top EV Chargers for Workplaces</SubHeading>
+          <SubHeading my={{ base: '10px', xl: '' }}>
+            Top EV Chargers for Workplaces
+          </SubHeading>
           <CustomText>
             VineCharge supports all OCPP-compliant chargers. Here are some great
             options for keeping your team or visitors charged at work.
@@ -21,7 +23,7 @@ const Recommendation = () => {
         <Grid
           gridTemplateColumns={{ base: '1fr', xl: 'repeat(4,1fr)' }}
           justify={'center'}
-          gap={'50px'}
+          gap={{ base: '30px', xl: '40px' }}
           mt="50px"
         >
           <Box
@@ -32,7 +34,7 @@ const Recommendation = () => {
             transition="transform 0.5s ease" // Smooth transition for the rotation
             _hover={{ transform: 'scale(1.1)' }} // Rotate by 90 degrees on hover
           >
-            <Image src={charger1} h={'200px'} />
+            <Image mx={'auto'} src={charger1} h={'200px'} />
             <Text fontSize={'20px'} fontWeight={'bold'} py="10px">
               Wallbox Supernova
             </Text>
@@ -54,7 +56,7 @@ const Recommendation = () => {
             transition="transform 0.5s ease" // Smooth transition for the rotation
             _hover={{ transform: 'scale(1.1)' }} // Rotate by 90 degrees on hover
           >
-            <Image src={charger2} h={'200px'} />
+            <Image mx={'auto'} src={charger2} h={'200px'} />
             <Text fontSize={'20px'} fontWeight={'bold'} py="10px">
               Wallbox Supernova
             </Text>
@@ -76,7 +78,7 @@ const Recommendation = () => {
             transition="transform 0.5s ease" // Smooth transition for the rotation
             _hover={{ transform: 'scale(1.1)' }} // Rotate by 90 degrees on hover
           >
-            <Image src={charger3} h={'200px'} />
+            <Image mx={'auto'} src={charger3} h={'200px'} />
             <Text fontSize={'20px'} fontWeight={'bold'} py="10px">
               Wallbox Supernova
             </Text>
@@ -98,7 +100,7 @@ const Recommendation = () => {
             transition="transform 0.5s ease" // Smooth transition for the rotation
             _hover={{ transform: 'scale(1.1)' }} // Rotate by 90 degrees on hover
           >
-            <Image src={charger4} h={'200px'} />
+            <Image mx={'auto'} src={charger4} h={'200px'} />
             <Text fontSize={'20px'} fontWeight={'bold'} py="10px">
               Wallbox Supernova
             </Text>

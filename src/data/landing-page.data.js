@@ -24,7 +24,7 @@ export const card = [
   {
     title: 'EV drivers',
     content: [
-      'Download the VineCharge app to find chargers, scan to start a session, and pay seamlessly, all from your phone.',
+      'Download the VineVolts app to find chargers, scan to start a session, and pay seamlessly, all from your phone.',
     ],
   },
 ]
@@ -58,22 +58,18 @@ export const platform = [
 
 export const testimony = [
   {
-    name: 'Jack Bauwer',
-    title: 'CEO of EV Charger',
-    content: `Obtaining CTEP certification [with Vine Mobility] for our DirectPowerPS 360 DC fast chargers is a significant achievement. It's a testament to our commitment to delivering cutting-edge,
-                compliant charging solutions.`,
+    name: ' James A.',
+    title: 'Head of Operations, PowerEdge EV Solutions',
+    content: `From the first demo to full deployment, VineCharge impressed us with their deep understanding of the African market. Their seamless integration with Paystack made payment collection effortless for our users. We’re proud to partner with Vine Mobility as we scale our EV charging network`,
   },
   {
-    name: 'Paul Ryan',
-    title: 'CEO of EV Charger',
-    content: `Vine Mobility has been a people driven business from day one. It's been the same mission to essentially put customers first. That's what's been really key with the success of Vine Mobility. Investors have invested in Vine Mobility and you've have built up a huge reputation in space. It's all because of people."`,
+    name: 'Bonito Zhang',
+    title: 'Director of Business Development, Gopro EV Solutions',
+    content: `We were impressed by how smoothly Vine Mobility’s software integrated with our chargers. The flexibility, OCPP compliance, and attention to detail made the entire process fast and stress-free. Gopro is excited to officially partner with Vine Mobility to bring smart, scalable EV charging solutions to Africa."`,
   },
   {
-    name: 'Paul Ryan',
-    title: 'CEO of EV Charger',
-    content: `Obtaining CTEP certification [with Vine Mobility] for our
-                DirectPowerPS 360 DC fast chargers is a significant achievement.
-                It's a testament to our commitment to delivering cutting-edge,
-                compliant charging solutions.`,
+    name: 'Max Z',
+    title: 'International Sales Manager, Caraok EV Solutions',
+    content: `We tested Vine Mobility’s software with our Caraok chargers and the experience was excellent. Their platform integrated flawlessly, delivering a stable and user-friendly management system. We are excited to partner with Vine Mobility to support the expansion of EV charging across Africa.`,
   },
 ]

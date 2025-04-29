@@ -22,7 +22,7 @@ const Hero = () => {
           mt={{ base: '30px', xl: '70px' }}
           mb={{ base: '30px' }}
         >
-          <Box maxW={'700px'}>
+          <Box maxW={'600px'}>
             <MainHeading>Download the VineVolt Driver&apos;s App</MainHeading>
             <CustomText py={{ base: '20px', xl: '20px' }} maxW={'400px'}>
               Click a button below to get the VineVolt Driver&apos;s app for iOS
@@ -40,7 +40,7 @@ const Hero = () => {
                 bg="transparent"
                 _hover={{ bg: 'transparent', border: 'none' }}
               >
-                <Image h={{ base: '4rem', xl: '100%' }} src={google} />
+                <Image h={{ base: '4rem', xl: '5rem' }} src={google} />
               </Button>
             </Flex>
           </Box>

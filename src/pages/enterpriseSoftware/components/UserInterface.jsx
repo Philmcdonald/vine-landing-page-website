@@ -12,7 +12,7 @@ const UserInterface = () => {
       <Wrapper>
         <Box maxW={'600px'}>
           <SubHeading>End-User Interfaces</SubHeading>
-          <CustomText mt={{ base: '20px', xl: '50px' }}>
+          <CustomText mt={{ base: '10px', xl: '20px' }}>
             We’re big on user experience because EV charging should be simple,
             smooth, and stress-free.
           </CustomText>
@@ -61,7 +61,7 @@ const UserInterface = () => {
             </Text>
             <Link to={'/vine-volts-app'}>
               <CustomButton
-                btnText={'Get the ChargeLab app'}
+                btnText={'Get the VineVolts app'}
                 color={'#8fc03f'}
                 bg={'none'}
                 px={'0px'}

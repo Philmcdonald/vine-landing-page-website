@@ -81,7 +81,7 @@ const Form = () => {
                   <CustomButton
                     btnText={'All software features'}
                     bg={'transparent'}
-                    p={'0px'}
+                    p={{ base: '0px', xl: '0px' }}
                     color={'#8fc03f'}
                   />
                 </Link>

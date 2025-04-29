@@ -33,7 +33,7 @@ const Features = () => {
               <Box color={'#fff'} key={title}>
                 <Image
                   src={img}
-                  h={{ base: '38px', md: '40px' }}
+                  h={{ base: '35px', md: '40px' }}
                   mb={{ base: '10px', md: '' }}
                 />
                 <Text

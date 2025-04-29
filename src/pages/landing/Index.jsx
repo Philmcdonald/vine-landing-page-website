@@ -1,5 +1,5 @@
 import Hero from './components/Hero'
-// import Sponsor from './components/Sponsor'
+import Sponsor from './components/Sponsor'
 import { Box } from '@chakra-ui/react'
 import Service from './components/Service'
 // import Reseller from './components/Reseller'
@@ -12,7 +12,7 @@ const Index = () => {
   return (
     <Box>
       <Hero />
-      {/* <Sponsor /> */}
+      <Sponsor />
       <Service />
       {/* <Reseller /> */}
       <WhyCharge />

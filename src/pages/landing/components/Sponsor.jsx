@@ -1,9 +1,14 @@
-import { Box, Flex, Image } from '@chakra-ui/react'
-import React from 'react'
-import brand1 from '../../../assets/brand1.png'
-import brand2 from '../../../assets/brand2.png'
-import brand3 from '../../../assets/brand3.png'
-import brand4 from '../../../assets/brand4.png'
+import { Box, Flex, Grid, Image } from '@chakra-ui/react'
+
+import brand1 from '../../../assets/abb-logo.svg'
+import brand2 from '../../../assets/RAB-logo.svg'
+import brand3 from '../../../assets/colliers-logo.svg'
+import brand4 from '../../../assets/bentallgreenoak-logo.svg'
+import brand5 from '../../../assets/espen-logo.svg'
+import brand6 from '../../../assets/eaton-logo.svg'
+import brand7 from '../../../assets/Polara-Logo.svg'
+import brand8 from '../../../assets/Wallbox-logo.svg'
+
 import { Wrapper } from '../../../components'
 
 const Sponsor = () => {
@@ -11,24 +16,41 @@ const Sponsor = () => {
     <Wrapper
       py={{
         base: '45px',
-        xl: '50px',
+        xl: '80px',
       }}
-      mt={{ base: '', xl: '-120px' }}
+      mt={{ base: '', xl: '-50px' }}
     >
-      <Flex align={'center'} gap={'50px'} justify={'center'}>
+      <Grid
+        gridTemplateColumns={{ xl: 'repeat(4, 1fr)' }}
+        align={'center'}
+        gap={{ base: '40px', xl: '50px' }}
+        justify={'center'}
+      >
         <Box>
-          <Image src={brand1} h={'250px'} />
+          <Image src={brand1} h={{ base: '20px', xl: '30px' }} />
         </Box>
         <Box>
-          <Image src={brand2} h={'250px'} />
+          <Image src={brand2} h={{ base: '20px', xl: '30px' }} />
         </Box>
         <Box>
-          <Image src={brand3} h={'250px'} />
+          <Image src={brand3} h={{ base: '20px', xl: '30px' }} />
         </Box>
         <Box>
-          <Image src={brand4} h={'250px'} />
+          <Image src={brand4} h={{ base: '20px', xl: '30px' }} />
         </Box>
-      </Flex>
+        <Box>
+          <Image src={brand5} h={{ base: '20px', xl: '30px' }} />
+        </Box>
+        <Box>
+          <Image src={brand6} h={{ base: '20px', xl: '30px' }} />
+        </Box>
+        <Box>
+          <Image src={brand7} h={{ base: '20px', xl: '30px' }} />
+        </Box>
+        <Box>
+          <Image src={brand8} h={{ base: '20px', xl: '30px' }} />
+        </Box>
+      </Grid>
     </Wrapper>
   )
 }

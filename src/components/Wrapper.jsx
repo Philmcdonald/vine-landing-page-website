@@ -8,7 +8,7 @@ const Wrapper = ({ children, ...props }) => {
       mx="auto"
       py={{
         base: '50px',
-        xl: '100px',
+        xl: '80px',
       }}
       {...props}
     >
