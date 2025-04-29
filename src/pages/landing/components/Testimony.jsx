@@ -22,6 +22,7 @@ const Testimony = () => {
             We make money when you make money.
           </Text>
           <Text
+          className=''
             textAlign={'center'}
             fontSize={'18px'}
             fontWeight={{ base: 'normal', xl: 'medium' }}
@@ -30,6 +31,7 @@ const Testimony = () => {
           </Text>
 
           <Grid
+          className=''
             templateColumns={{ base: '1fr', md: '1fr 1fr 1fr' }}
             mt="30px"
             justifyContent={'center'}

@@ -14,7 +14,7 @@ const Backdrop = () => {
       <Wrapper>
         <Flex gap={'50px'} ml={{ xl: '500px' }} mt={{ xl: '100px' }}>
           <Box color={'#fff'}>
-            <SubHeading>Want to react us directly?</SubHeading>
+            <SubHeading>Want to reach us directly?</SubHeading>
             <CustomText py={{ base: '10px', xl: '20px' }}>
               Call or Email Vine Mobility today:
             </CustomText>

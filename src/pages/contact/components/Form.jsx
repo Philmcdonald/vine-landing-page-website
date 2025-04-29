@@ -47,7 +47,7 @@ const Form = () => {
             >
               <CustomText>1.</CustomText>
               <CustomText>
-                24/7 Phone Support: Call us anytime at 1-800-636-0986 for
+                24/7 Phone Support: Call us anytime at +234-813-610-739 for
                 immediate assistance.
               </CustomText>
             </Flex>
@@ -61,10 +61,10 @@ const Form = () => {
             >
               <CustomText>2.</CustomText>
               <CustomText>
-                Submit a Ticket: Visit our ChargeLab customer support page to
-                submit a ticket for non-urgent inquiries or specific requests.
-                This option ensures your issue is tracked and addressed promptly
-                by our team.
+                Submit a Ticket: Visit our Vine Mobility customer support page
+                to submit a ticket for non-urgent inquiries or specific
+                requests. This option ensures your issue is tracked and
+                addressed promptly by our team.
               </CustomText>
             </Flex>
           </Box>
