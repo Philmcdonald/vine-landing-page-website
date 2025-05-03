@@ -6,10 +6,18 @@ import UserInterface from './components/UserInterface'
 // import Integration from './components/Integration'
 // import Developers from './components/Developers'
 import GetStarted from './components/GetStarted'
+import { Helmet } from 'react-helmet-async'
 
 const EnterpriseSofware = () => {
   return (
     <Box>
+      <Helmet>
+              <title>Enterprise Software | Vine Mobility</title>
+              <meta
+                name="description"
+                content="Vine Mobility is transforming urban transport with smart solutions."
+              />
+            </Helmet>
       <Hero />
       <HowItWorks />
       <Features />
