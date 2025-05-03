@@ -12,7 +12,7 @@ const Index = () => {
        <Helmet>
                     <title>White Label | Vine Mobility</title>
                     <meta
-                      name="description"
+                      name="White Label"
                       content="Vine Mobility is transforming urban transport with smart solutions."
                     />
                   </Helmet>

@@ -12,7 +12,7 @@ const Reseller = () => {
        <Helmet>
                     <title>Reseller | Vine Mobility</title>
                     <meta
-                      name="description"
+                      name="Resseller Option"
                       content="Vine Mobility is transforming urban transport with smart solutions."
                     />
                   </Helmet>

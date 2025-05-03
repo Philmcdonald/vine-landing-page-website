@@ -12,7 +12,7 @@ const WorkPlace = () => {
       <Helmet>
               <title>Work Space | Vine Mobility</title>
               <meta
-                name="description"
+                name="Work Space"
                 content="Vine Mobility is transforming urban transport with smart solutions."
               />
             </Helmet>

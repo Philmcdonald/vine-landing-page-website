@@ -10,7 +10,7 @@ const Index = () => {
        <Helmet>
                     <title>Integration | Vine Mobility</title>
                     <meta
-                      name="description"
+                      name="Integration "
                       content="Vine Mobility is transforming urban transport with smart solutions."
                     />
                   </Helmet>

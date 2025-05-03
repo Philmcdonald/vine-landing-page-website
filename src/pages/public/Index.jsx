@@ -11,7 +11,7 @@ const Index = () => {
       <Helmet>
               <title>Public | Vine Mobility</title>
               <meta
-                name="description"
+                name="Public"
                 content="Vine Mobility is transforming urban transport with smart solutions."
               />
             </Helmet>

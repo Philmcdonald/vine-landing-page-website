@@ -9,7 +9,7 @@ const Contact = () => {
       <Helmet>
         <title>Cotact | Vine Mobility</title>
         <meta
-          name="description"
+          name="Contact Us"
           content="Vine Mobility is transforming urban transport with smart solutions."
         />
       </Helmet>
