@@ -3,10 +3,20 @@ import { Box, Text } from '@chakra-ui/react'
 
 import { MainHeading, Wrapper } from '../../components'
 import { Cookie, Driver, Privacy, Site } from './term'
+import { Helmet } from 'react-helmet-async'
 
 const Index = () => {
   return (
-    <Box bg={'#f7f7f7'} h={'fit-content'}>
+    <Box>
+      <Helmet>
+              <title>Privacy Policy | Vine Mobility</title>
+              <meta
+                name="description"
+                content="Vine Mobility is transforming urban transport with smart solutions."
+              />
+            </Helmet>
+
+            <Box bg={'#f7f7f7'} h={'fit-content'}>
       <Wrapper py={'20px'}>
         <Box>
           <Text
@@ -38,6 +48,8 @@ const Index = () => {
         </Box>
       </Wrapper>
     </Box>
+    </Box>
+    
   )
 }
 
