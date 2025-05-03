@@ -11,7 +11,7 @@ const Index = () => {
       <Helmet>
               <title>Privacy Policy | Vine Mobility</title>
               <meta
-                name="description"
+                name="Our Privacy Policy"
                 content="Vine Mobility is transforming urban transport with smart solutions."
               />
             </Helmet>

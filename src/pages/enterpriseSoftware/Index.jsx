@@ -14,7 +14,7 @@ const EnterpriseSofware = () => {
       <Helmet>
               <title>Enterprise Software | Vine Mobility</title>
               <meta
-                name="description"
+                name="Enterprise Software"
                 content="Vine Mobility is transforming urban transport with smart solutions."
               />
             </Helmet>

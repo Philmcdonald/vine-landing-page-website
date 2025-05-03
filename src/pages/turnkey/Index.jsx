@@ -9,7 +9,7 @@ const TurnKey = () => {
        <Helmet>
                     <title>Turnkey | Vine Mobility</title>
                     <meta
-                      name="description"
+                      name="Turnkey"
                       content="Vine Mobility is transforming urban transport with smart solutions."
                     />
                   </Helmet>
